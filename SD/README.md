@@ -216,7 +216,7 @@ flowchart LR
 | DreamFusion: Text-to-3D using 2D Diffusion | [arXiv](https://arxiv.org/abs/2209.14988) |
 | Elucidating the Design Space of Diffusion-Based Generative Models | [arXiv](https://arxiv.org/abs/2206.00364) |
 | GaussianDreamer: Fast Generation from Text to 3D Gaussian Splatting | [arXiv](https://arxiv.org/abs/2403.04873) |
-| Hunyuan3D 2024 | — |
+| Hunyuan3D 1.0: A Unified Framework for Text-to-3D and Image-to-3D Generation | [arXiv](https://arxiv.org/abs/2411.02293) |
 | IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models | [arXiv](https://arxiv.org/abs/2308.06721) |
 | Improved Denoising Diffusion Probabilistic Models | [arXiv](https://arxiv.org/abs/2102.09672) |
 | Latent Consistency Models: Synthesizing High-Resolution Images with Few-Step Inference | [arXiv](https://arxiv.org/abs/2310.04378) |
