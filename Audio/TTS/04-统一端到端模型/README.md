@@ -54,14 +54,14 @@ NaturalSpeech（微软，2022）采用不同路线：更大 Transformer + VAE + 
 
 ## 精选论文
 
-**Kim et al. (2021) "VITS: Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech"**
+**Kim et al. (2021) "VITS: Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech" [[arXiv](https://arxiv.org/abs/2106.06103)]**
 
 - **一句话定位**：VAE + Flow + HiFi-GAN 三合一的单模型端到端 TTS，GitHub 10k+ star，社区影响力最大
 - **阅读重点**：第 2 节（VAE 公式 + Posterior/Prior Encoder + Flow 设计）
 - **时间分配建议**：精读第 2 节（VAE 训练/推理差异、Flow 作用）；附录架构图一定要看
 - **与本模块的关系**：统一端到端范式的核心代表作，几乎所有后续工作都引用或基于 VITS
 
-**Tan et al. (2022) "NaturalSpeech: End-to-End Text-to-Speech Synthesis with Naturalness"**
+**Tan et al. (2022) "NaturalSpeech: End-to-End Text-to-Speech Synthesis with Naturalness" [[arXiv](https://arxiv.org/abs/2205.04421)]**
 
 - **一句话定位**：微软的大规模端到端 TTS，展示 Scaling up 路线的成功，质量接近人类录音
 - **阅读重点**：第 2 节（VAE + Transformer + WaveNet 的大规模训练思路）

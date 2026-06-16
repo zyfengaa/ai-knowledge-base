@@ -15,9 +15,9 @@
 
 | # | 论文 | 为什么算突破 |
 |---|------|------------|
-| 1 | **Ren et al. (2019) "FastSpeech: Fast, Robust and Controllable TTS"** | 非自回归声学模型的首创，时长预测器 + 位置对齐 + 知识蒸馏，推理速度提升 270 倍 |
-| 2 | **Ren et al. (2021) "FastSpeech 2: Fast and High-Quality End-to-End TTS"** | 去掉知识蒸馏，直接预测真实时长 + VAE + 音高/能量预测器，质量显著提升 |
-| 3 | **Kong et al. (2020) "HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis"** | GAN vocoder 的里程碑，多周期判别器实现高质量波形，快速且可控 |
+| 1 | **Ren et al. (2019) "FastSpeech: Fast, Robust and Controllable TTS" [[arXiv](https://arxiv.org/abs/1905.09263)]** | 非自回归声学模型的首创，时长预测器 + 位置对齐 + 知识蒸馏，推理速度提升 270 倍 |
+| 2 | **Ren et al. (2021) "FastSpeech 2: Fast and High-Quality End-to-End TTS" [[arXiv](https://arxiv.org/abs/2006.04558)]** | 去掉知识蒸馏，直接预测真实时长 + VAE + 音高/能量预测器，质量显著提升 |
+| 3 | **Kong et al. (2020) "HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis" [[arXiv](https://arxiv.org/abs/2010.05646)]** | GAN vocoder 的里程碑，多周期判别器实现高质量波形，快速且可控 |
 
 ## 架构总结
 

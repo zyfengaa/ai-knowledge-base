@@ -51,21 +51,21 @@ CosyVoice：SST token（有监督学习语义）+ LLM 生成 SST → CausalFlow 
 
 ## 精选论文
 
-**Wang et al. (2023) "VALL-E: Neural Codec Language Model for Zero-Shot Text-to-Speech"**
+**Wang et al. (2023) "VALL-E: Neural Codec Language Model for Zero-Shot Text-to-Speech" [[arXiv](https://arxiv.org/abs/2301.02111)]**
 
 - **一句话定位**：首次提出"神经编解码 + 语言模型"的 TTS 新范式，零样本语音克隆的突破性工作
 - **阅读重点**：第 2-3 节（EnCodec tokenization + AR+NAR 两层建模）
 - **时间分配建议**：精读第 2 节 AR+NAR 模型设计（最核心 idea）；第 4 节扫读
 - **与本模块的关系**：大模型 TTS 路线的开创之作，定义了 Codec + LM 范式
 
-**Le et al. (2023) "Voicebox: Text-Guided Multilingual Universal Speech Generation at Scale"**
+**Le et al. (2023) "VoiceBox: Text-Guided Multilingual Universal Speech Generation at Scale" [[arXiv](https://arxiv.org/abs/2306.15687)]**
 
 - **一句话定位**：Meta 的生成式语音模型，Flow Matching + Infilling 一个框架实现 TTS/去噪/编辑/跨语言
 - **阅读重点**：第 2-3 节（Flow Matching 训练目标 + Text-Guided Infilling 策略）
 - **时间分配建议**：需先了解 Flow Matching 基础；重点读第 2 节 Infilling 策略
 - **与本模块的关系**：展示了"非自回归大模型 TTS"路线的可能性，与 VALL-E 互补
 
-**Du et al. (2024) "CosyVoice: A Scalable Multilingual Zero-shot Text-to-Speech based on Supervised Semantic Tokens"**
+**Du et al. (2024) "CosyVoice: A Scalable Multilingual Zero-shot Text-to-Speech based on Supervised Semantic Tokens" [[arXiv](https://arxiv.org/abs/2407.05407)]**
 
 - **一句话定位**：阿里通义的多语言零样本 TTS，LLM + 有监督语义 token + CausalFlow Matching，代表最新产业方向
 - **阅读重点**：第 2-3 节（SST token 设计 + CausalFlow Matching 架构）

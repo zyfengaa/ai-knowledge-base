@@ -49,7 +49,7 @@
 
 ## 精选论文
 
-**Tan et al. (2021) "A Survey on Neural Speech Synthesis"**
+**Tan et al. (2021) "A Survey on Neural Speech Synthesis" [[arXiv](https://arxiv.org/abs/2103.11203)]**
 
 - **一句话定位**：最全面的 TTS 综述，覆盖经典→神经→大模型完整演进，是学习 TTS 的最佳入口
 - **阅读重点**：第 II 节（文本前端）+ 第 III 节（经典方法）

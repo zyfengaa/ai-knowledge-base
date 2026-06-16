@@ -15,9 +15,9 @@
 
 | # | 论文 | 为什么算突破 |
 |---|------|------------|
-| 1 | **van den Oord et al. (2016) "WaveNet: A Generative Model for Raw Audio"** | 深度学习 TTS 的起源性工作，第一个用神经网络生成高质量原始音频波形，被引 5000+ |
-| 2 | **Wang et al. (2017) "Tacotron: Towards End-to-End Speech Synthesis"** | 第一个从文本直接预测 mel 谱的端到端声学模型，包含 CBHG + Attention 结构 |
-| 3 | **Shen et al. (2018) "Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions"** | 把 Tacotron 和 WaveNet 串联为完整端到端管线，音质达到接近人类水平 |
+| 1 | **van den Oord et al. (2016) "WaveNet: A Generative Model for Raw Audio" [[arXiv](https://arxiv.org/abs/1609.03499)]** | 深度学习 TTS 的起源性工作，第一个用神经网络生成高质量原始音频波形，被引 5000+ |
+| 2 | **Wang et al. (2017) "Tacotron: Towards End-to-End Speech Synthesis" [[arXiv](https://arxiv.org/abs/1703.10135)]** | 第一个从文本直接预测 mel 谱的端到端声学模型，包含 CBHG + Attention 结构 |
+| 3 | **Shen et al. (2018) "Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions" [[arXiv](https://arxiv.org/abs/1712.05884)]** | 把 Tacotron 和 WaveNet 串联为完整端到端管线，音质达到接近人类水平 |
 
 ## 架构总结
 

@@ -47,28 +47,28 @@ Tacotron 1（2017）首创 CBHG + Attention，但对齐不稳；Tacotron 2（201
 
 ## 精选论文
 
-**Wang et al. (2017) "Tacotron: Towards End-to-End Speech Synthesis"**
+**Wang et al. (2017) "Tacotron: Towards End-to-End Speech Synthesis" [[arXiv](https://arxiv.org/abs/1703.10135)]**
 
 - **一句话定位**：第一个端到端文本→mel 声学模型，奠定了 Encoder-Attention-Decoder 的 TTS 基础范式
 - **阅读重点**：第 2-3 节（CBHG Encoder + Attention 机制）
 - **时间分配建议**：精读第 2-3 节结构设计；第 4 节实验扫读
 - **与本模块的关系**：回答了"能不能用一个神经网络代替传统多阶段声学建模"——证明可以
 
-**Shen et al. (2018) "Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions"**
+**Shen et al. (2018) "Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions" [[arXiv](https://arxiv.org/abs/1712.05884)]**
 
 - **一句话定位**：Tacotron 2 将 Tacotron + WaveNet 串联为完整管线，质量接近人类水平
 - **阅读重点**：第 2 节（相较于 Tacotron 1 的简化改进）
 - **时间分配建议**：建议和 Tacotron 1 对照读，重点关注改进点
 - **与本模块的关系**：回答了"自回归声学模型能不能做到工业级质量"——可以，但推理速度成瓶颈
 
-**Ren et al. (2019) "FastSpeech: Fast, Robust and Controllable Text-to-Speech"**
+**Ren et al. (2019) "FastSpeech: Fast, Robust and Controllable Text-to-Speech" [[arXiv](https://arxiv.org/abs/1905.09263)]**
 
 - **一句话定位**：非自回归声学模型的首创，Duration Predictor + FFT Blocks 实现并行生成
 - **阅读重点**：第 2-3 节（Duration Predictor + Teacher 蒸馏方案）
 - **时间分配建议**：精读第 2 节并行生成机制；第 3 节扫读
 - **与本模块的关系**：回答了"非自回归能不能做声学建模"——能，速度提升 270 倍
 
-**Ren et al. (2021) "FastSpeech 2: Fast and High-Quality End-to-End Text-to-Speech"**
+**Ren et al. (2021) "FastSpeech 2: Fast and High-Quality End-to-End Text-to-Speech" [[arXiv](https://arxiv.org/abs/2006.04558)]**
 
 - **一句话定位**：去掉蒸馏，用真实时长 + VAE + Variance Adaptor，质量显著提升
 - **阅读重点**：第 2 节（与 FastSpeech 1 的差异）

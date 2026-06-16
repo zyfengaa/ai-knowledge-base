@@ -48,14 +48,14 @@ HiFi-GAN 的关键设计：Generator 用转置卷积上采样 + MRF 融合多路
 
 ## 精选论文
 
-**van den Oord et al. (2016) "WaveNet: A Generative Model for Raw Audio"**
+**van den Oord et al. (2016) "WaveNet: A Generative Model for Raw Audio" [[arXiv](https://arxiv.org/abs/1609.03499)]**
 
 - **一句话定位**：深度学习 TTS 的起源，第一个用神经网络生成高质量原始音频波形，被引 8000+
 - **阅读重点**：第 2-3 节（Causal Dilated CNN + Gated Activation）
 - **时间分配建议**：精读第 2 节架构设计（这是本质创新）；后续变分下界扫读即可
 - **与本模块的关系**：波形生成领域的起点，所有后续 vocoder 工作都建立在它的基础上
 
-**Kong et al. (2020) "HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis"**
+**Kong et al. (2020) "HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis" [[arXiv](https://arxiv.org/abs/2010.05646)]**
 
 - **一句话定位**：GAN vocoder 的里程碑，多周期判别器实现高质量+高性能，工业级标准
 - **阅读重点**：第 2-3 节（Generator 的 MRF + Multi-Period/Multi-Scale Discriminator）
