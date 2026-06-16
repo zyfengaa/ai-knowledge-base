@@ -1,4 +1,4 @@
-# 03 — 多模态融合架构
+﻿# 03 — 多模态融合架构
 
 ## 一句话开场
 
@@ -87,13 +87,3 @@
 | Qwen-VL: A Versatile Vision-Language Model | QwenVL () | [arXiv](https://arxiv.org/abs/2308.12966) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and LLMs | [arXiv](https://arxiv.org/abs/2301.12597) |
-| InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks | [arXiv](https://arxiv.org/abs/2312.14238) |
-| Improved Baselines with Visual Instruction Tuning | [arXiv](https://arxiv.org/abs/2310.03744) |
-| Visual Instruction Tuning | [arXiv](https://arxiv.org/abs/2304.08485) |
-| Qwen-VL: A Versatile Vision-Language Model | [arXiv](https://arxiv.org/abs/2308.12966) |

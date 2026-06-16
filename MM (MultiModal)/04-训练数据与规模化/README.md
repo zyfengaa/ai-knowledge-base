@@ -1,4 +1,4 @@
-# 04 — 训练数据与规模化
+﻿# 04 — 训练数据与规模化
 
 ## 一句话开场
 
@@ -77,10 +77,3 @@
 | Reproducible scaling laws for contrastive language-image learning | ScalingLaws () | [arXiv](https://arxiv.org/abs/2303.16199) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| DataComp: In search of the next generation of multimodal datasets | [arXiv](https://arxiv.org/abs/2304.14108) |
-| Reproducible scaling laws for contrastive language-image learning | [arXiv](https://arxiv.org/abs/2303.16199) |

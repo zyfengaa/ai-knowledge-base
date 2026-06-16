@@ -1,4 +1,4 @@
-# 05 — 数据问题
+﻿﻿﻿# 05 — 数据问题
 
 ## 数据不够怎么办？三种路线的选择
 
@@ -48,15 +48,15 @@ Whisper 告诉 ASR 社区一个很可能影响未来几年的结论：**标注�
 
 ## 精选论文
 
-**Baevski et al. (2020) "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations"**
+**Baevski et al. (2020) "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations" [[arXiv](https://arxiv.org/abs/2006.11477)]**
 
 这篇是自监督 ASR 的里程碑。核心创新就是对比学习 + 量化 + Transformer 的预训练框架。如果你之前不太了解对比学习，这篇可能需要多花点时间在"对比损失函数"上。如果你了解，重点看它的量化设计（为什么需要量化，以及怎么做的）和 fine-tune 阶段的实验——在 10 分钟、1 小时、10 小时标注数据上的提升。
 
-**Hsu et al. (2021) "HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units"**
+**Hsu et al. (2021) "HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units" [[arXiv](https://arxiv.org/abs/2106.07447)]**
 
 HuBERT 的论文写得非常清楚（作者来自 Meta FAIR）。重点读它两个部分：（1）迭代伪标签的生成方法——先跑一次 k-means 聚类生成第一轮标签 → 训模型 → 用模型提取特征再做聚类 → 生成更高质量的标签；（2）为什么简单的 MSE 损失在聚类伪标签上就管用，不需要对比学习的复杂设计。
 
-**Radford et al. (2022) "Robust Speech Recognition via Large-Scale Weak Supervision" (OpenAI Whisper)**
+**Radford et al. (2022) "Robust Speech Recognition via Large-Scale Weak Supervision" [[arXiv](https://arxiv.org/abs/2212.04356)] (OpenAI Whisper)**
 
 Whisper 的论文篇幅不长，但实验量很大。不需要逐字读完——读它的数据集构建方法（怎么筛选 68 万小时的弱标注数据、怎么处理噪声数据）和模型的设计选择（为什么用 Encoder-Decoder 而不是纯 Encoder、为什么做多任务训练）就够了。它的"弱监督"结论对所有从业者有启发意义。
 ---
@@ -70,11 +70,3 @@ Whisper 的论文篇幅不长，但实验量很大。不需要逐字读完——
 | wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations | wav2vec2 () | [arXiv](https://arxiv.org/abs/2006.11477) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units | [arXiv](https://arxiv.org/abs/2106.07447) |
-| Robust Speech Recognition via Large-Scale Weak Supervision | [arXiv](https://arxiv.org/abs/2212.04356) |
-| wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations | [arXiv](https://arxiv.org/abs/2006.11477) |

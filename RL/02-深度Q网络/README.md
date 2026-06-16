@@ -1,4 +1,4 @@
-# 02 — 深度 Q 网络：从 DQN 到 Rainbow
+﻿﻿﻿# 02 — 深度 Q 网络：从 DQN 到 Rainbow
 
 ## 一句话开场
 
@@ -48,14 +48,14 @@
 - **时间分配建议**：必读。建议精读第 3 节（算法设计），第 4 节可扫读（实验结果）
 - **与本模块的关系**：回答了"怎么用神经网络替代 Q 表"
 
-**Van Hasselt et al. (2016) "Deep Reinforcement Learning with Double Q-Learning"**
+**Van Hasselt et al. (2016) "Deep Reinforcement Learning with Double Q-Learning" [[arXiv](https://arxiv.org/abs/1509.06461)]**
 
 - **一句话定位**：诊断并修复 DQN 高估偏差的简短有力论文
 - **阅读重点**：第 3-4 节——高估的理论分析 + Double DQN 算法
 - **时间分配建议**：必读，约 15 分钟能读完核心公式
 - **与本模块的关系**：回答了"DQN 留下什么麻烦，怎么修正"
 
-**Hessel et al. (2018) "Rainbow: Combining Improvements in Deep Reinforcement Learning"**
+**Hessel et al. (2018) "Rainbow: Combining Improvements in Deep Reinforcement Learning" [[arXiv](https://arxiv.org/abs/1710.02298)]**
 
 - **一句话定位**：整合 DQN 六个改进方向的集成论文
 - **阅读重点**：第 3 节——各改进的消融对比表
@@ -66,7 +66,7 @@
 
 ## 拓展阅读
 
-- **Wang et al. (2016) "Dueling Network Architectures for Deep Reinforcement Learning"** — 将 Q 值分解为状态值 + 动作优势，提高某些场景下的学习效率。如果你对 DQN 架构改进感兴趣可以翻翻。
+- **Wang et al. (2016) "Dueling Network Architectures for Deep Reinforcement Learning" [[arXiv](https://arxiv.org/abs/1511.06581)]** — 将 Q 值分解为状态值 + 动作优势，提高某些场景下的学习效率。如果你对 DQN 架构改进感兴趣可以翻翻。
 
 
 > 拓展论文不移除，放在各模块的 `拓展/` 文件夹下。核心论文在模块根目录。
@@ -88,12 +88,3 @@
 | Rainbow: Combining Improvements in Deep Reinforcement Learning | Rainbow () | [arXiv](https://arxiv.org/abs/1710.02298) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| Human-level control through deep reinforcement learning | [arXiv](https://arxiv.org/abs/1312.5602) |
-| Deep Reinforcement Learning with Double Q-learning | [arXiv](https://arxiv.org/abs/1509.06461) |
-| Dueling Network Architectures for Deep Reinforcement Learning | [arXiv](https://arxiv.org/abs/1511.06581) |
-| Rainbow: Combining Improvements in Deep Reinforcement Learning | [arXiv](https://arxiv.org/abs/1710.02298) |

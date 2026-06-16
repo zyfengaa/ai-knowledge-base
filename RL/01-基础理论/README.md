@@ -1,4 +1,4 @@
-# 01 — 基础理论：MDP、Bellman 方程与动态规划
+﻿# 01 — 基础理论：MDP、Bellman 方程与动态规划
 
 ## 一句话开场
 
@@ -83,11 +83,3 @@
 | Q-Learning | Watkins (1992) | — |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| Reinforcement Learning: A Survey | — |
-| Reinforcement Learning: An Introduction (2nd Edition) | — |
-| Q-Learning | — |

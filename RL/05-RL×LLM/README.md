@@ -1,4 +1,4 @@
-# 05 — RL × LLM：从 RLHF 到 GRPO 的对齐与推理训练
+﻿﻿﻿# 05 — RL × LLM：从 RLHF 到 GRPO 的对齐与推理训练
 
 ## 一句话开场
 
@@ -43,7 +43,7 @@
 
 ## 精选论文
 
-**Christiano et al. (2017) "Deep Reinforcement Learning from Human Preferences"**
+**Christiano et al. (2017) "Deep Reinforcement Learning from Human Preferences" [[arXiv](https://arxiv.org/abs/1706.03741)]**
 
 - **一句话定位**：RLHF 的起源，首次证明人类偏好可通过对比训练转化为可优化的奖励信号
 - **阅读重点**：第 3 节——偏好从何而来 + 奖励模型训练
@@ -76,7 +76,7 @@
 ## 拓展阅读
 
 - **Ayoub et al. (2023) "RLOO: Leave-One-Out Advantage Estimation for LLM Alignment"** — GRPO 的前身，用 Leave-One-Out 基线替代 critic。如果你想理解"去掉 critic"这个思路的演进，建议翻翻。
-- **Yu et al. (2025) "DAPO: Dynamic Sampling and Decoupled Policy Optimization"** — 2025 年的进一步解耦方案：policy 和 reward 解耦训练、动态采样策略。代表 GRPO 之后的演进方向。
+- **Yu et al. (2025) "DAPO: Dynamic Sampling and Decoupled Policy Optimization" [[arXiv](https://arxiv.org/abs/2503.14442)]** — 2025 年的进一步解耦方案：policy 和 reward 解耦训练、动态采样策略。代表 GRPO 之后的演进方向。
 
 
 > 拓展论文不移除，放在各模块的 `拓展/` 文件夹下。核心论文在模块根目录。
@@ -99,14 +99,3 @@
 | Deep Reinforcement Learning from Human Preferences | RLHF () | [arXiv](https://arxiv.org/abs/1706.03741) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| DAPO: An Open-Source RL System from Scratch | [arXiv](https://arxiv.org/abs/2503.14442) |
-| Direct Preference Optimization: Your Language Model is Secretly a Reward Model | [arXiv](https://arxiv.org/abs/2305.18290) |
-| DeepSeekMath: Pushing the Limits of Mathematical Reasoning with Open Language Models | [arXiv](https://arxiv.org/abs/2402.03300) |
-| Training language models to follow instructions with human feedback | [arXiv](https://arxiv.org/abs/2203.02155) |
-| Deep Reinforcement Learning from Human Preferences | [arXiv](https://arxiv.org/abs/1706.03741) |
-| REINFORCE Leave One Out | [arXiv](https://arxiv.org/abs/2303.00276) |

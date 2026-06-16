@@ -1,4 +1,4 @@
-# 04 — 连续控制与最大熵：从 DDPG 到 SAC
+﻿﻿# 04 — 连续控制与最大熵：从 DDPG 到 SAC
 
 ## 一句话开场
 
@@ -51,7 +51,7 @@
 - **时间分配建议**：必读。精读第 3 节（算法），第 4 节（实验）扫读即可
 - **与本模块的关系**：回答了"连续动作空间怎么做 RL"
 
-**Fujimoto et al. (2018) "Addressing Function Approximation Error in Actor-Critic Methods" (TD3)**
+**Fujimoto et al. (2018) "Addressing Function Approximation Error in Actor-Critic Methods" [[arXiv](https://arxiv.org/abs/1802.09477)] (TD3)**
 
 - **一句话定位**：系统诊断并修复 DDPG 高估问题的工程典范
 - **阅读重点**：第 3-4 节——高估的理论分析 + Clipped Double Q-Learning
@@ -91,12 +91,3 @@
 | Addressing Function Approximation Error in Actor-Critic Methods | TD3 () | [arXiv](https://arxiv.org/abs/1802.09477) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| Continuous control with deep reinforcement learning | [arXiv](https://arxiv.org/abs/1509.02971) |
-| Deterministic Policy Gradient Algorithms | — |
-| Soft Actor-Critic: Off-Policy Maximum Entropy Deep RL with a Stochastic Actor | [arXiv](https://arxiv.org/abs/1801.01290) |
-| Addressing Function Approximation Error in Actor-Critic Methods | [arXiv](https://arxiv.org/abs/1802.09477) |

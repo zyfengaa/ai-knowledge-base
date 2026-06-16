@@ -1,4 +1,4 @@
-# 03 — 三种端到端范式
+﻿﻿﻿﻿# 03 — 三种端到端范式
 
 ## 为什么一个问题，会有三种答案？
 
@@ -63,25 +63,25 @@ RNNT 的核心想法是：用一个小型的 Prediction Network 来建模"我已
 
 这篇是端到端 ASR 的理论起点。读它的重点不是技术实现细节（Blank 和前向后向的推导），而是理解它"为什么不需要对齐"这个核心 insight。如果你时间紧，读摘要 + 引言 + 结论就可掌握精神。
 
-**Hannun et al. (2014) "Deep Speech: Scaling up End-to-End Speech Recognition"**
+**Hannun et al. (2014) "Deep Speech: Scaling up End-to-End Speech Recognition" [[arXiv](https://arxiv.org/abs/1412.5567)]**
 
 这篇起了一个关键的桥接作用——CTC 2006 年就提出了理论，但直到 Deep Speech 1 才有人验证了它在工业数据上真正跑得通。它的贡献不是新的理论（核心算法仍然是 CTC），而是证明了"这套方法在真实场景下能工作"。如果你时间紧，读它的实验设置和结果分析就够了。
 
-**Chan et al. (2016) "Listen, Attend and Spell"**
+**Chan et al. (2016) "Listen, Attend and Spell" [[arXiv](https://arxiv.org/abs/1608.08087)]**
 
 把 Attention 引入 ASR 的代表作。你如果熟悉 NLP 里的 Attention，读起来会很顺畅。重点是理解 Listen + Attend + Spell 三条 pipe 的协作方式。LAS 也是后来 Whisper 架构的前身（Whisper 基本上就是 LAS 的大规模版本）。
 
-**Graves (2012) "Sequence Transduction with Recurrent Neural Networks"**
+**Graves (2012) "Sequence Transduction with Recurrent Neural Networks" [[arXiv](https://arxiv.org/abs/1211.3711)]**
 
 这篇是 RNNT 的原始论文，发表时间早于 LAS（2012 vs 2016），但 RNNT 的实用化是很多年以后的事了（Google 在 2018-2019 年才把它推到生产环境）。读的时候重点放在 Prediction Network + Joiner 的设计上，它是 RNNT 和 CTC/AED 最大的差异所在。
 
-**Watanabe et al. (2017) "Hybrid CTC/Attention Architecture for End-to-End Speech Recognition"**
+**Watanabe et al. (2017) "Hybrid CTC/Attention Architecture for End-to-End Speech Recognition" [[arXiv](https://arxiv.org/abs/1703.03506)]**
 
 这篇是 ESPnet 的奠基论文，也是目前工程上最常用的方案。核心想法很简洁：CTC 加速收敛 + Attention 提升精度 = 最好的折中。如果你工作中用 ESPnet，这篇是必读。
 
 ## 拓展阅读
 
-- **Amodei et al. (2016) "Deep Speech 2"** — 和 Deep Speech 1 同一路线，但规模更大（多 GPU 训练 + 数据增强）。如果你想了解 CTC 路线在"更大规模"下怎么做，可以翻翻。
+- **Amodei et al. (2016) "Deep Speech 2" [[arXiv](https://arxiv.org/abs/1512.02595)]** — 和 Deep Speech 1 同一路线，但规模更大（多 GPU 训练 + 数据增强）。如果你想了解 CTC 路线在"更大规模"下怎么做，可以翻翻。
 ---
 
 ## 论文参考
@@ -95,14 +95,3 @@ RNNT 的核心想法是：用一个小型的 Prediction Network 来建模"我已
 | Sequence Transduction with Recurrent Neural Networks | RNNT () | [arXiv](https://arxiv.org/abs/1211.3711) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with RNNs | — |
-| Deep Speech 2: End-to-End Speech Recognition in English and Mandarin | [arXiv](https://arxiv.org/abs/1512.02595) |
-| Deep Speech: Scaling up End-to-end Speech Recognition | [arXiv](https://arxiv.org/abs/1412.5567) |
-| Hybrid CTC/Attention Architecture for End-to-End Speech Recognition | [arXiv](https://arxiv.org/abs/1703.03506) |
-| Listen, Attend and Spell | [arXiv](https://arxiv.org/abs/1608.08087) |
-| Sequence Transduction with Recurrent Neural Networks | [arXiv](https://arxiv.org/abs/1211.3711) |

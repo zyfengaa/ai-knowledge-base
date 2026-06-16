@@ -1,4 +1,4 @@
-# 06 — 离线 RL 与前沿挑战：从静态数据集到决策基础模型
+﻿﻿﻿# 06 — 离线 RL 与前沿挑战：从静态数据集到决策基础模型
 
 ## 一句话开场
 
@@ -42,21 +42,21 @@
 
 ## 精选论文
 
-**Levine et al. (2020) "Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems"**
+**Levine et al. (2020) "Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems" [[arXiv](https://arxiv.org/abs/2005.01643)]**
 
 - **一句话定位**：Offline RL 领域的系统性综述，建立完整的问题定义和方法分类
 - **阅读重点**：第 3-4 节——分布偏移的理论分析 + 方法分类框架
 - **时间分配建议**：必读。建议先读第 2-4 节（问题定义 + 分类），约 40 分钟
 - **与本模块的关系**：提供了 Offline RL 的完整全景
 
-**Kumar et al. (2020) "Conservative Q-Learning for Offline Reinforcement Learning" (CQL)**
+**Kumar et al. (2020) "Conservative Q-Learning for Offline Reinforcement Learning" [[arXiv](https://arxiv.org/abs/2006.04779)] (CQL)**
 
 - **一句话定位**：最广泛使用的 Offline RL 算法之一，通过在 Q 学习目标中加入保守惩罚项解决分布偏移
 - **阅读重点**：第 3 节——CQL 的损失函数推导 + 实验验证
 - **时间分配建议**：必读。重点读第 3.1-3.2 节（CQL 的 intuiton 和损失函数），约 25 分钟
 - **与本模块的关系**：回答了"如何在 Q 学习中解决分布外高估"
 
-**Chen et al. (2021) "Decision Transformer: Reinforcement Learning via Sequence Modeling"**
+**Chen et al. (2021) "Decision Transformer: Reinforcement Learning via Sequence Modeling" [[arXiv](https://arxiv.org/abs/2106.01345)]**
 
 - **一句话定位**：用 Transformer 序列建模替代 Bellman 方程，开启一个全新的 RL 建模范式
 - **阅读重点**：第 3-4 节——架构设计 + 与 CQL/BEAR 的对比
@@ -89,12 +89,3 @@
 | Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems | OfflineRL () | [arXiv](https://arxiv.org/abs/2005.01643) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| Conservative Q-Learning for Offline Reinforcement Learning | [arXiv](https://arxiv.org/abs/2006.04779) |
-| Decision Transformer: Reinforcement Learning via Sequence Modeling | [arXiv](https://arxiv.org/abs/2106.01345) |
-| Offline Reinforcement Learning with Implicit Q-Learning | [arXiv](https://arxiv.org/abs/2110.06169) |
-| Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems | [arXiv](https://arxiv.org/abs/2005.01643) |

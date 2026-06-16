@@ -1,4 +1,4 @@
-# 06 — 视频多模态与前沿挑战
+﻿# 06 — 视频多模态与前沿挑战
 
 ## 一句话开场
 
@@ -78,11 +78,3 @@
 | VideoLLaMA: An Instruction-tuned Audio-Visual Language Model for Video Understanding | VideoLLaMA () | [arXiv](https://arxiv.org/abs/2306.02858) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| Emu3: Next-Token Prediction is All You Need | [arXiv](https://arxiv.org/abs/2409.05442) |
-| ImageBind: One Embedding Space To Bind Them All | [arXiv](https://arxiv.org/abs/2305.05665) |
-| VideoLLaMA: An Instruction-tuned Audio-Visual Language Model for Video Understanding | [arXiv](https://arxiv.org/abs/2306.02858) |

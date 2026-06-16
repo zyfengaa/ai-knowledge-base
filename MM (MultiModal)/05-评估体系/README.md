@@ -1,4 +1,4 @@
-# 05 — 评估体系
+﻿# 05 — 评估体系
 
 ## 一句话开场
 
@@ -79,11 +79,3 @@
 | MMVP: A Multimodal Mosai Puzzle for Evaluating Vision-Language Models | MMVP () | [arXiv](https://arxiv.org/abs/2401.02577) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| MMBench: Is Your Multi-modal Model an All-around Player? | [arXiv](https://arxiv.org/abs/2307.06281) |
-| MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI | [arXiv](https://arxiv.org/abs/2311.16502) |
-| MMVP: A Multimodal Mosai Puzzle for Evaluating Vision-Language Models | [arXiv](https://arxiv.org/abs/2401.02577) |

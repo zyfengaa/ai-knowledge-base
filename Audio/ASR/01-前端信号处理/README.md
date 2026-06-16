@@ -1,4 +1,4 @@
-# 01 — 信号输入
+﻿﻿# 01 — 信号输入
 
 ## 波形到特征，是怎么过来的？
 
@@ -26,7 +26,7 @@ FBank 的维度之间是相关的（毕竟相邻滤波器有重叠），如果�
 
 这篇是 MFCC 的原始论文。技术上很简单：预加重 → 分帧 → 加窗 → FFT → 梅尔滤波器组 → log → DCT → MFCC。但它的影响之大，四十年后所有 ASR 系统（包括 Whisper）依然在用这个 pipeline。写个几千字的综述都讲不完这条线，但核心思想其实就是上面那几行字。愿意的话了解一下具体计算过程就行，不需要背公式。
 
-**Park et al. (2019) "SpecAugment: A Simple Data Augmentation Method for Automatic Speech Recognition""
+**Park et al. (2019) "SpecAugment: A Simple Data Augmentation Method for Automatic Speech Recognition" [[arXiv](https://arxiv.org/abs/1904.08779)]"
 
 这篇就是 SpecAugment。说实话它的论文写得比我上面那段描述复杂得多（做了大量消融实验、还有时域扭曲 warping 的变体），但核心就是时间和频率掩码。你如果赶时间，读完摘要和算法描述就够了。
 
@@ -43,10 +43,3 @@ FBank 的维度之间是相关的（毕竟相邻滤波器有重叠），如果�
 | SpecAugment: A Simple Data Augmentation Method for ASR | SpecAugment () | [arXiv](https://arxiv.org/abs/1904.08779) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| Comparison of Parametric Representations for Monosyllabic Word Recognition | — |
-| SpecAugment: A Simple Data Augmentation Method for ASR | [arXiv](https://arxiv.org/abs/1904.08779) |

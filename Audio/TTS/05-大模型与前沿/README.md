@@ -1,99 +1,99 @@
-﻿# 05 — 大模型与零样本（Large Model & Zero-shot）
+﻿﻿# 05 �� ��ģ������������Large Model & Zero-shot��
 
-## 一句话开场
+## һ�仰����
 
-> 给我 3 秒老板的录音，然后用他的声音读这封邮件——2023 年之前这需要数小时录音数据，2023 年之后变成了一个 TTS 模型的默认能力。
+> ���� 3 ���ϰ��¼���Ȼ�����������������ʼ�����2023 ��֮ǰ����Ҫ��Сʱ¼�����ݣ�2023 ��֮������һ�� TTS ģ�͵�Ĭ��������
 
-## 正文：渐进式理解（3-5 段）
+## ���ģ�����ʽ��⣨3-5 �Σ�
 
-**第一层：问题定义。** 大模型 TTS 要解决的核心问题：在极小甚至零目标说话人标注数据的情况下，合成任意说话人的自然语音。这要求模型同时满足发音准确、音色复刻、韵律自然。传统 TTS 的 Scaling 结论是"模型越大越自然"，但仍然需要配对数据。大模型范式的根本突破在于：**把 TTS 从"声学参数的回归问题"重新定义为了"语音 token 的语言生成问题"**。
+**��һ�㣺���ⶨ�塣** ��ģ�� TTS Ҫ����ĺ������⣺�ڼ�С������Ŀ��˵���˱�ע���ݵ�����£��ϳ�����˵���˵���Ȼ�������Ҫ��ģ��ͬʱ���㷢��׼ȷ����ɫ���̡�������Ȼ����ͳ TTS �� Scaling ������"ģ��Խ��Խ��Ȼ"������Ȼ��Ҫ������ݡ���ģ�ͷ�ʽ�ĸ���ͻ�����ڣ�**�� TTS ��"��ѧ�����Ļع�����"���¶���Ϊ��"���� token ��������������"**��
 
-**第二层：核心直觉。** 核心思想极其直观：既然 LLM 可以把文本 tokenize 然后预测下一个 token，那语音也可以被 tokenize（离散化成 token），然后用同样的 next-token prediction 范式来训练。关键在于找对"语音 tokenizer"——神经编解码器（Neural Audio Codec）把连续语音压缩成离散 codec token。一旦语音变成了 token，整个 LLM 工具箱（Scaling、In-context Learning、Prompting）就全部能用上了。
+**�ڶ��㣺����ֱ����** ����˼�뼫��ֱ�ۣ���Ȼ LLM ���԰��ı� tokenize Ȼ��Ԥ����һ�� token��������Ҳ���Ա� tokenize����ɢ���� token����Ȼ����ͬ���� next-token prediction ��ʽ��ѵ�����ؼ������Ҷ�"���� tokenizer"�����񾭱��������Neural Audio Codec������������ѹ������ɢ codec token��һ���������� token������ LLM �����䣨Scaling��In-context Learning��Prompting����ȫ���������ˡ�
 
-**第三层：方案细节。** 三个代表的路线：
+**�����㣺����ϸ�ڡ�** ���������·�ߣ�
 
-| 代表 | 核心范式 | 语音表征 | 关键创新 |
+| ���� | ���ķ�ʽ | ������� | �ؼ����� |
 |------|---------|---------|---------|
-| VALL-E (2023) | AR+NAR Next-token Prediction | EnCodec 无监督 codec | 语音版 GPT，AR 粗粒度 + NAR 细粒度 |
-| VoiceBox (2023) | Flow Matching + Infilling | EnCodec codec | 统一 TTS/去噪/编辑，一个框架多任务 |
-| CosyVoice (2024) | LLM + CausalFlow Matching | SST 有监督语义 token | 语义/声学分治，SST 分离内容和音色 |
+| VALL-E (2023) | AR+NAR Next-token Prediction | EnCodec �޼ල codec | ����� GPT��AR ������ + NAR ϸ���� |
+| VoiceBox (2023) | Flow Matching + Infilling | EnCodec codec | ͳһ TTS/ȥ��/�༭��һ����ܶ����� |
+| CosyVoice (2024) | LLM + CausalFlow Matching | SST �мල���� token | ����/��ѧ���Σ�SST �������ݺ���ɫ |
 
-VALL-E：EnCodec tokenize → AR 模型生成粗 token → NAR 模型补全细 token → EnCodec decoder 还原波形。
-VoiceBox：随机 mask 语音片段 → Flow Matching 在文本引导下填充 mask → 一个框架同时做 TTS/去噪/编辑。
-CosyVoice：SST token（有监督学习语义）+ LLM 生成 SST → CausalFlow Matching 生成声学特征 → vocoder 合成波形。
+VALL-E��EnCodec tokenize �� AR ģ�����ɴ� token �� NAR ģ�Ͳ�ȫϸ token �� EnCodec decoder ��ԭ���Ρ�
+VoiceBox����� mask ����Ƭ�� �� Flow Matching ���ı���������� mask �� һ�����ͬʱ�� TTS/ȥ��/�༭��
+CosyVoice��SST token���мලѧϰ���壩+ LLM ���� SST �� CausalFlow Matching ������ѧ���� �� vocoder �ϳɲ��Ρ�
 
-**第四层：不同方案的权衡。**
+**���Ĳ㣺��ͬ������Ȩ�⡣**
 
-| 维度 | VALL-E | VoiceBox | CosyVoice |
+| ά�� | VALL-E | VoiceBox | CosyVoice |
 |------|--------|----------|-----------|
-| 零样本质量 | ★★★★ | ★★★★★ | ★★★★★ |
-| 多语言 | ★★（仅英文） | ★★★★（6 种） | ★★★★（中英） |
-| 推理速度 | ★★（AR 慢） | ★★★ | ★★★★ |
-| 训练数据 | 60k hrs | 50k hrs | ~10k hrs |
-| 可控性 | ★★（Prompt 驱动） | ★★★（Text-guided） | ★★★★（SFT） |
-| 幻觉问题 | ★★（较多） | ★★★ | ★★★★（较少） |
+| ���������� | ����� | ������ | ������ |
+| ������ | ����Ӣ�ģ� | ����6 �֣� | ������Ӣ�� |
+| �����ٶ� | ��AR ���� | ���� | ����� |
+| ѵ������ | 60k hrs | 50k hrs | ~10k hrs |
+| �ɿ��� | ��Prompt ������ | ���Text-guided�� | ����SFT�� |
+| �þ����� | ���϶ࣩ | ���� | �������٣� |
 
-**第五层：总结升华。** 大模型 TTS 是自 WaveNet 以来 TTS 最根本的范式转变。带来的好处：零样本 + 可扩展 + 统一框架。带来的新麻烦：LLM 的通病（幻觉、高成本、弱可控性）也完美继承。2025-2026 年看，大模型 TTS 已成为学术和产业的绝对主流，传统 pipeline TTS 则在向"低成本边缘部署"方向分化。
-
----
-
-## 学习目标
-
-读完你能：
-
-- 用一句话说清 VALL-E 的核心思想：语音 tokenization + next-token prediction = 语音版 GPT
-- 解释神经编解码器（Neural Codec）在大模型 TTS 中扮演的角色——它是语音的 Tokenizer
-- 对比 VALL-E、VoiceBox、CosyVoice 在"如何建模语音"上的核心差异
-- 说出大模型 TTS 相比传统的三个优势（零样本/可扩展/统一）和三个局限（幻觉/成本/可控性）
-- 面对一个 TTS 项目，判断适合传统范式还是大模型范式
+**����㣺�ܽ�������** ��ģ�� TTS ���� WaveNet ���� TTS ������ķ�ʽת�䡣�����ĺô��������� + ����չ + ͳһ��ܡ����������鷳��LLM ��ͨ�����þ����߳ɱ������ɿ��ԣ�Ҳ�����̳С�2025-2026 �꿴����ģ�� TTS �ѳ�Ϊѧ���Ͳ�ҵ�ľ�����������ͳ pipeline TTS ������"�ͳɱ���Ե����"����ֻ���
 
 ---
 
-## 精选论文
+## ѧϰĿ��
 
-**Wang et al. (2023) "VALL-E: Neural Codec Language Model for Zero-Shot Text-to-Speech"**
+�������ܣ�
 
-- **一句话定位**：首次提出"神经编解码 + 语言模型"的 TTS 新范式，零样本语音克隆的突破性工作
-- **阅读重点**：第 2-3 节（EnCodec tokenization + AR+NAR 两层建模）
-- **时间分配建议**：精读第 2 节 AR+NAR 模型设计（最核心 idea）；第 4 节扫读
-- **与本模块的关系**：大模型 TTS 路线的开创之作，定义了 Codec + LM 范式
-
-**Le et al. (2023) "Voicebox: Text-Guided Multilingual Universal Speech Generation at Scale"**
-
-- **一句话定位**：Meta 的生成式语音模型，Flow Matching + Infilling 一个框架实现 TTS/去噪/编辑/跨语言
-- **阅读重点**：第 2-3 节（Flow Matching 训练目标 + Text-Guided Infilling 策略）
-- **时间分配建议**：需先了解 Flow Matching 基础；重点读第 2 节 Infilling 策略
-- **与本模块的关系**：展示了"非自回归大模型 TTS"路线的可能性，与 VALL-E 互补
-
-**Du et al. (2024) "CosyVoice: A Scalable Multilingual Zero-shot Text-to-Speech based on Supervised Semantic Tokens"**
-
-- **一句话定位**：阿里通义的多语言零样本 TTS，LLM + 有监督语义 token + CausalFlow Matching，代表最新产业方向
-- **阅读重点**：第 2-3 节（SST token 设计 + CausalFlow Matching 架构）
-- **时间分配建议**：精读第 2 节 SST 设计（和 VALL-E 的 EnCodec token 对照读）
-- **与本模块的关系**：展示了"语义 + 声学分治"的解决思路，比纯 codec LM 更稳定
+- ��һ�仰˵�� VALL-E �ĺ���˼�룺���� tokenization + next-token prediction = ����� GPT
+- �����񾭱��������Neural Codec���ڴ�ģ�� TTS �а��ݵĽ�ɫ������������� Tokenizer
+- �Ա� VALL-E��VoiceBox��CosyVoice ��"��ν�ģ����"�ϵĺ��Ĳ���
+- ˵����ģ�� TTS ��ȴ�ͳ���������ƣ�������/����չ/ͳһ�����������ޣ��þ�/�ɱ�/�ɿ��ԣ�
+- ���һ�� TTS ��Ŀ���ж��ʺϴ�ͳ��ʽ���Ǵ�ģ�ͷ�ʽ
 
 ---
 
-## 拓展阅读
+## ��ѡ����
 
-- **Kharitonov et al. (2023) "SpearTTS: Speaker-Fourier Transformer for Text-to-Speech"** — Meta 的早期 speaker-conditioned TTS，展示了 speaker 解耦思路。如果你对"说话人信息如何建模"感兴趣可以翻翻。
+**Wang et al. (2023) "VALL-E: Neural Codec Language Model for Zero-Shot Text-to-Speech" [[arXiv](https://arxiv.org/abs/2301.02111)]**
 
-> 拓展论文不移除，放在各模块的 拓展/ 文件夹下。核心论文在模块根目录。
+- **һ�仰��λ**���״����"�񾭱���� + ����ģ��"�� TTS �·�ʽ�������������¡��ͻ���Թ���
+- **�Ķ��ص�**���� 2-3 �ڣ�EnCodec tokenization + AR+NAR ���㽨ģ��
+- **ʱ����佨��**�������� 2 �� AR+NAR ģ����ƣ������ idea������ 4 ��ɨ��
+- **�뱾ģ��Ĺ�ϵ**����ģ�� TTS ·�ߵĿ���֮���������� Codec + LM ��ʽ
+
+**Le et al. (2023) "Voicebox: Text-Guided Multilingual Universal Speech Generation at Scale" [[arXiv](https://arxiv.org/abs/2306.15687)]**
+
+- **һ�仰��λ**��Meta ������ʽ����ģ�ͣ�Flow Matching + Infilling һ�����ʵ�� TTS/ȥ��/�༭/������
+- **�Ķ��ص�**���� 2-3 �ڣ�Flow Matching ѵ��Ŀ�� + Text-Guided Infilling ���ԣ�
+- **ʱ����佨��**�������˽� Flow Matching �������ص���� 2 �� Infilling ����
+- **�뱾ģ��Ĺ�ϵ**��չʾ��"���Իع��ģ�� TTS"·�ߵĿ����ԣ��� VALL-E ����
+
+**Du et al. (2024) "CosyVoice: A Scalable Multilingual Zero-shot Text-to-Speech based on Supervised Semantic Tokens" [[arXiv](https://arxiv.org/abs/2407.05407)]**
+
+- **һ�仰��λ**������ͨ��Ķ����������� TTS��LLM + �мල���� token + CausalFlow Matching���������²�ҵ����
+- **�Ķ��ص�**���� 2-3 �ڣ�SST token ��� + CausalFlow Matching �ܹ���
+- **ʱ����佨��**�������� 2 �� SST ��ƣ��� VALL-E �� EnCodec token ���ն���
+- **�뱾ģ��Ĺ�ϵ**��չʾ��"���� + ��ѧ����"�Ľ��˼·���ȴ� codec LM ���ȶ�
 
 ---
 
-## 模块间连接
+## ��չ�Ķ�
 
-- **前置依赖**：建议先读 **01-文本前端** 和 **02-声学建模**，理解传统范式后才能对比 LLM 范式
-- **后续衔接**：读完进入 **06-可控性与个性化**，理解横跨所有范式的控制在大模型时代的挑战
-- **本模块与哪些模块正交**：与 03（波形生成）在一定程度上独立——大模型 TTS 也依赖 vocoder/codec decoder 做最后波形重建
+- **Kharitonov et al. (2023) "SpearTTS: Speaker-Fourier Transformer for Text-to-Speech" [[arXiv](https://arxiv.org/abs/2305.xxxxx)]** �� Meta ������ speaker-conditioned TTS��չʾ�� speaker ����˼·��������"˵������Ϣ��ν�ģ"����Ȥ���Է�����
+
+> ��չ���Ĳ��Ƴ������ڸ�ģ��� ��չ/ �ļ����¡�����������ģ���Ŀ¼��
+
+---
+
+## ģ�������
+
+- **ǰ������**�������ȶ� **01-�ı�ǰ��** �� **02-��ѧ��ģ**����⴫ͳ��ʽ����ܶԱ� LLM ��ʽ
+- **�����ν�**��������� **06-�ɿ�������Ի�**����������з�ʽ�Ŀ����ڴ�ģ��ʱ������ս
+- **��ģ������Щģ������**���� 03���������ɣ���һ���̶��϶���������ģ�� TTS Ҳ���� vocoder/codec decoder ��������ؽ�
 
 
 ---
 
-## 论文参考
+## ���Ĳο�
 
-| 论文 | 作者(年份) | 链接 |
+| ���� | ����(���) | ���� |
 |---|---|---|
 | CosyVoice: A Scalable Multilingual Zero-shot Text-to-speech Synthesizer | CosyVoice () | [arXiv](https://arxiv.org/abs/2407.05407) |
 | VALL-E: Neural Codec Language Models for Zero-Shot Text to Speech Synthesis | VALL-E () | [arXiv](https://arxiv.org/abs/2301.02111) |
@@ -101,10 +101,3 @@ CosyVoice：SST token（有监督学习语义）+ LLM 生成 SST → CausalFlow 
 
 ---
 
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| CosyVoice: A Scalable Multilingual Zero-shot Text-to-speech Synthesizer | [arXiv](https://arxiv.org/abs/2407.05407) |
-| VALL-E: Neural Codec Language Models for Zero-Shot Text to Speech Synthesis | [arXiv](https://arxiv.org/abs/2301.02111) |
-| VoiceBox: Text-Guided Multilingual Universal Speech Generation at Scale | [arXiv](https://arxiv.org/abs/2306.15687) |

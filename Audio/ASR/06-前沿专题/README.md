@@ -1,4 +1,4 @@
-# 06 — 开放问题：从 ASR 到语音理解
+﻿﻿# 06 — 开放问题：从 ASR 到语音理解
 
 ## 2023 年之前的问题
 
@@ -59,15 +59,15 @@ Streaming RNNT（He 2019）——这篇论文最重要的结论不是"RNNT 能�
 
 ## 精选论文
 
-**He et al. (2019) "Streaming End-to-End Speech Recognition for Mobile Devices"**
+**He et al. (2019) "Streaming End-to-End Speech Recognition for Mobile Devices" [[arXiv](https://arxiv.org/abs/1811.06621)]**
 
 不是学术突破，是最完整的流式 ASR 工程报告。你不需要逐字读，但建议保存一份作为流式部署的 checklist。
 
-**Wang et al. (2023) "SALMONN: Towards Generic Hearing Abilities for Large Language Models"**
+**Wang et al. (2023) "SALMONN: Towards Generic Hearing Abilities for Large Language Models" [[arXiv](https://arxiv.org/abs/2310.05863)]**
 
 把 Whisper Encoder 和 LLaMA 接起来的代表工作。重点读它对"通用听觉能力"的愿景——为什么我们需要一个模型理解语音、音乐、环境音，以及它目前做到了什么程度。
 
-**Meta (2023) "SeamlessM4T: Massively Multilingual & Multimodal Machine Translation"**
+**Meta (2023) "SeamlessM4T: Massively Multilingual & Multimodal Machine Translation" [[arXiv](https://arxiv.org/abs/2308.11596)]**
 
 Meta 这篇的工作量非常大：多语言语音到语音/文本翻译 + ASR 全部统一。你不必读完整篇（它太长了），重点是理解它的架构设计——同一个 Encoder-Decoder 怎么同时支持语音输入输出和文本输入输出。
 
@@ -75,13 +75,13 @@ Meta 这篇的工作量非常大：多语言语音到语音/文本翻译 + ASR �
 
 ASR + LLM 交叉方向最全面的综述。想了解这个领域从 2022-2023 年的全景的话，这篇是最好的起点。2024-2025 年后续发展了很多新方向，但这篇打的基础框架你现在仍然在用。
 
-**Qwen2-Audio (2024) "Qwen2-Audio Technical Report"**
+**Qwen2-Audio (2024) "Qwen2-Audio Technical Report" [[arXiv](https://arxiv.org/abs/2407.10759)]**
 
 中文生态里最有代表性的音频 LLM 之一。重点读它的双模式设计（语音对话 vs 音频理解），以及怎么处理中文特有的口音和代码切换问题。对工业界尤其有参考价值——因为大部分学术论文讨论的是英语场景，而中文场景有很多自己的坑。
 
 ## 拓展阅读
 
-- **Luo & Mesgarani (2019) "Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation"** — 时域语音分离的范式突破。如果你做会议或多人 ASR 场景，这篇很关键。
+- **Luo & Mesgarani (2019) "Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation" [[arXiv](https://arxiv.org/abs/1809.07454)]** — 时域语音分离的范式突破。如果你做会议或多人 ASR 场景，这篇很关键。
 ---
 
 ## 论文参考
@@ -95,14 +95,3 @@ ASR + LLM 交叉方向最全面的综述。想了解这个领域从 2022-2023 �
 | Streaming End-to-end Speech Recognition for Mobile Devices | StreamingRNNT () | [arXiv](https://arxiv.org/abs/1811.06621) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| BetweenSpeechText Brown2023 | — |
-| Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation | [arXiv](https://arxiv.org/abs/1809.07454) |
-| Qwen2-Audio: Advancing Speech Understanding and Interaction | [arXiv](https://arxiv.org/abs/2407.10759) |
-| SALMONN: Towards Generic Hearing Abilities for Large Language Models | [arXiv](https://arxiv.org/abs/2310.05863) |
-| SeamlessM4T: Massively Multilingual & Multimodal Machine Translation | [arXiv](https://arxiv.org/abs/2308.11596) |
-| Streaming End-to-end Speech Recognition for Mobile Devices | [arXiv](https://arxiv.org/abs/1811.06621) |

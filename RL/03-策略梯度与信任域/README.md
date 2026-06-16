@@ -1,4 +1,4 @@
-# 03 — 策略梯度与信任域：从 REINFORCE 到 PPO
+﻿﻿# 03 — 策略梯度与信任域：从 REINFORCE 到 PPO
 
 ## 一句话开场
 
@@ -48,21 +48,21 @@
 - **时间分配建议**：略读，了解核心公式即可（约 10 分钟）
 - **与本模块的关系**：回答了"直接优化策略的理论可能性"
 
-**Schulman et al. (2015) "Trust Region Policy Optimization" (TRPO)**
+**Schulman et al. (2015) "Trust Region Policy Optimization" [[arXiv](https://arxiv.org/abs/1502.05477)] (TRPO)**
 
 - **一句话定位**：用 KL 散度约束策略更新的里程碑，首次解决策略更新的稳定性问题
 - **阅读重点**：第 3-4 节——KL 约束 + 共轭梯度求解思路
 - **时间分配建议**：重点读第 3 节（理论直觉），第 5 节（算法）可跳读
 - **与本模块的关系**：回答了"如何保证策略更新不崩坏"
 
-**Schulman et al. (2017) "Proximal Policy Optimization Algorithms" (PPO)**
+**Schulman et al. (2017) "Proximal Policy Optimization Algorithms" [[arXiv](https://arxiv.org/abs/1707.06347)] (PPO)**
 
 - **一句话定位**：用 clip 简化 TRPO，成为 RLHF 的基础算法
 - **阅读重点**：第 3-4 节——Clipped Surrogate Objective + 算法伪代码
 - **时间分配建议**：必读。建议精读第 3 节，花约 20 分钟理解 Clip 的直觉
 - **与本模块的关系**：回答了"如何让信任域约束变得简单实用"
 
-**Mnih et al. (2016) "Asynchronous Methods for Deep Reinforcement Learning" (A3C)**
+**Mnih et al. (2016) "Asynchronous Methods for Deep Reinforcement Learning" [[arXiv](https://arxiv.org/abs/1602.01783)] (A3C)**
 
 - **一句话定位**：引入多线程异步训练的策略梯度方法，Actor-Critic 的代表作
 - **阅读重点**：第 2-3 节——A3C 的 n-step 更新 + 多线程架构
@@ -96,13 +96,3 @@
 | Trust Region Policy Optimization | TRPO () | [arXiv](https://arxiv.org/abs/1502.05477) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| Asynchronous Methods for Deep Reinforcement Learning | [arXiv](https://arxiv.org/abs/1602.01783) |
-| Greensmith VarianceReduction 2004 | — |
-| Proximal Policy Optimization Algorithms | [arXiv](https://arxiv.org/abs/1707.06347) |
-| Simple statistical gradient-following algorithms for connectionist reinforcement learning | — |
-| Trust Region Policy Optimization | [arXiv](https://arxiv.org/abs/1502.05477) |

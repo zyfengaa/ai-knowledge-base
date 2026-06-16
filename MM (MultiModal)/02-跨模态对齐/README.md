@@ -1,4 +1,4 @@
-# 02 — 跨模态对齐
+﻿# 02 — 跨模态对齐
 
 ## 一句话开场
 
@@ -79,12 +79,3 @@
 | Sigmoid Loss for Language Image Pre-Training | SigLIP () | [arXiv](https://arxiv.org/abs/2303.15343) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| BLIP: Bootstrapping Language-Image Pre-training for Unified VLU and Generation | [arXiv](https://arxiv.org/abs/2201.12086) |
-| Learning Transferable Visual Models From Natural Language Supervision | [arXiv](https://arxiv.org/abs/2103.00020) |
-| DataComp: In search of the next generation of multimodal datasets | [arXiv](https://arxiv.org/abs/2304.14108) |
-| Sigmoid Loss for Language Image Pre-Training | [arXiv](https://arxiv.org/abs/2303.15343) |

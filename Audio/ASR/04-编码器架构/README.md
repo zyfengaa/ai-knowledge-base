@@ -1,4 +1,4 @@
-# 04 — 编码器进化
+﻿﻿﻿﻿# 04 — 编码器进化
 
 ## 从 GRU 到 Conformer，ASR 编码器经历了什么？
 
@@ -31,11 +31,11 @@ Conformer 的解决方案是：**不选了，两个都要。**
 
 ## 精选论文
 
-**Dong et al. (2018) "Speech-Transformer: A No-Recurrence Sequence-to-Sequence Model for Speech Recognition"**
+**Dong et al. (2018) "Speech-Transformer: A No-Recurrence Sequence-to-Sequence Model for Speech Recognition" [[arXiv](https://arxiv.org/abs/1804.06993)]**
 
 这篇的工作量不大，但它问了一个很重要的问题：Transformer 到底能不能用在 ASR 上？答案是能。它就是那个"投石问路"的工作。如果你对 Transformer 已经很熟悉了，这篇可以快读——重点是它的实验设置和结果分析。
 
-**Gulati et al. (2020) "Conformer: Convolution-augmented Transformer for Speech Recognition"**
+**Gulati et al. (2020) "Conformer: Convolution-augmented Transformer for Speech Recognition" [[arXiv](https://arxiv.org/abs/2005.08100)]**
 
 Conformer 是 2020 年至今 ASR 编码器的事实标准——LibriSpeech 上的 WER 刷新、ESPnet 里的默认配置、WeNet / WenetSpeech 等框架都在用它。你在工作中应该已经接触到了，这一篇是帮你理解"为什么 Conformer 能成为标准"的。
 
@@ -43,7 +43,7 @@ Conformer 是 2020 年至今 ASR 编码器的事实标准——LibriSpeech 上�
 
 ## 拓展阅读
 
-- **Peng et al. (2022) "Branchformer: Parallel MLP-CNN-Attention Hybrid Architecture"** — Conformer 的改进版本，把串行的 Macaron 结构改成双分支并行的"全局分支 + 局部分支"。效果有一点提升，但思路比 Conformer 更清晰——如果你想了解"Conformer 之后还有什么"，可以翻翻。
+- **Peng et al. (2022) "Branchformer: Parallel MLP-CNN-Attention Hybrid Architecture" [[arXiv](https://arxiv.org/abs/2207.07682)]** — Conformer 的改进版本，把串行的 Macaron 结构改成双分支并行的"全局分支 + 局部分支"。效果有一点提升，但思路比 Conformer 更清晰——如果你想了解"Conformer 之后还有什么"，可以翻翻。
 
 > 注意：Squeezeformer、Zipformer、Emformer 这些主要是效率优化，不在"突破性 idea"的范畴内。
 ---
@@ -56,11 +56,3 @@ Conformer 是 2020 年至今 ASR 编码器的事实标准——LibriSpeech 上�
 | Speech-Transformer: A No-Recurrence Seq2Seq Model for Speech Recognition | SpeechTransformer () | [arXiv](https://arxiv.org/abs/1804.06993) |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| Branchformer: A Novel Encoder Architecture for Speech Processing | [arXiv](https://arxiv.org/abs/2207.02971) |
-| Conformer: Convolution-augmented Transformer for Speech Recognition | [arXiv](https://arxiv.org/abs/2005.08100) |
-| Speech-Transformer: A No-Recurrence Seq2Seq Model for Speech Recognition | [arXiv](https://arxiv.org/abs/1804.06993) |

@@ -1,4 +1,4 @@
-﻿# 06 — 可控性与个性化（Controllability & Personalization）
+﻿﻿﻿﻿# 06 — 可控性与个性化（Controllability & Personalization）
 
 ## 一句话开场
 
@@ -46,14 +46,14 @@ YourTTS：基于 VITS + Speaker Encoder，内容由 TTS 网络处理，音色由
 
 ## 精选论文
 
-**Wang et al. (2018) "Style Tokens: Unsupervised Style Modeling, Control and Transfer in End-to-End Speech Synthesis"**
+**Wang et al. (2018) "Style Tokens: Unsupervised Style Modeling, Control and Transfer in End-to-End Speech Synthesis" [[arXiv](https://arxiv.org/abs/1803.09017)]**
 
 - **一句话定位**：GST（Global Style Tokens）是无监督韵律风格建模的开创性工作，用 Token Bank + Attention 实现风格控制
 - **阅读重点**：第 2-3 节（Style Encoder + Style Token Attention 设计）
 - **时间分配建议**：精读第 2.1-2.3 节架构；核心直觉是"Token Bank 中的每个 token 代表一种风格原型"
 - **与本模块的关系**：可控性领域的奠基工作，定义了"无监督风格控制"这个方向
 
-**Casanova et al. (2022) "YourTTS: Towards Zero-Shot Multi-Speaker TTS and Zero-Shot Voice Conversion for Everyone"**
+**Casanova et al. (2022) "YourTTS: Towards Zero-Shot Multi-Speaker TTS and Zero-Shot Voice Conversion for Everyone" [[arXiv](https://arxiv.org/abs/2112.02418)]**
 
 - **一句话定位**：基于 VITS 实现零样本多说话人 TTS，用 Speaker Encoder + Speaker Conditioning 实现说话人迁移
 - **阅读重点**：第 2 节（VITS 改造为多说话人的方法）
@@ -64,7 +64,7 @@ YourTTS：基于 VITS + Speaker Encoder，内容由 TTS 网络处理，音色由
 
 ## 拓展阅读
 
-- **Hsu et al. (2019) "Hierarchical Generative Modeling for Controllable Speech Synthesis"** — Google 的分层生成模型，展示不同抽象层的控制（全局风格→局部韵律→声学细节）。如果你对"层次化控制"思路感兴趣可以翻翻。
+- **Hsu et al. (2019) "Hierarchical Generative Modeling for Controllable Speech Synthesis" [[arXiv](https://arxiv.org/abs/1810.07233)]** — Google 的分层生成模型，展示不同抽象层的控制（全局风格→局部韵律→声学细节）。如果你对"层次化控制"思路感兴趣可以翻翻。
 
 > 拓展论文不移除，放在各模块的 拓展/ 文件夹下。核心论文在模块根目录。
 

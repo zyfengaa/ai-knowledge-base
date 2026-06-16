@@ -1,4 +1,4 @@
-# 02 — HMM 的遗产
+﻿﻿﻿# 02 — HMM 的遗产
 
 ## 在端到端之前，ASR 是怎么装的？
 
@@ -32,13 +32,13 @@ DNN 的介入其实最开始不是要"推翻这套框架"，而是一种更温�
 
 这是一个 70,000+ 引用的论文。你读完前两章（HMM 的三个基本问题和前向后向算法），就已经掌握了传统 ASR 框架最核心的 80%。第三章的 Baum-Welch 可以后面再用到再细看。坦率地说，这篇读起来有些枯燥（毕竟 1989 年的排版和语言风格），但它是这个领域的"必修课"。
 
-**Dahl et al. (2012) "Context-Dependent Pre-Trained Deep Neural Networks for Large-Vocabulary Speech Recognition"**
+**Dahl et al. (2012) "Context-Dependent Pre-Trained Deep Neural Networks for Large-Vocabulary Speech Recognition" [[arXiv](https://arxiv.org/abs/1207.0580)]**
 
 这篇是 DNN 正式取代 GMM 的里程碑。你不需要深究它的预训练细节（现在看已经过时了），重点读它的对比实验——DNN-HMM 比最好的 GMM-HMM 系统提升了多少，为什么会提升。这篇直接告诉你：判别式模型替代生成式模型，是那一轮最大的推动力。
 
 ## 拓展阅读
 
-- **Hinton et al. (2012) "Deep Neural Networks for Acoustic Modeling in Speech Recognition"** — 这是微软和 Google 联合写的 DNN-HMM 综述，如果你对 DNN-HMM 这段历史感兴趣可以翻翻。
+- **Hinton et al. (2012) "Deep Neural Networks for Acoustic Modeling in Speech Recognition" [[arXiv](https://arxiv.org/abs/1207.0580)]** — 这是微软和 Google 联合写的 DNN-HMM 综述，如果你对 DNN-HMM 这段历史感兴趣可以翻翻。
 - **Povey et al. (2011) "The Kaldi Speech Recognition Toolkit"** — Kaldi 的论文不是学术突破，但它几乎是传统 ASR 工程的事实标准。如果你工作中需要做强制对齐或 WFST 相关的事情，Kaldi 是绕不开的。
 ---
 
@@ -50,12 +50,3 @@ DNN 的介入其实最开始不是要"推翻这套框架"，而是一种更温�
 | A Tutorial on Hidden Markov Models and Selected Applications in Speech Recognition | HMM () | — |
 
 ---
-
-## 论文参考
-
-| 论文 | 链接 |
-|---|---|
-| Context-Dependent Pre-trained Deep Neural Networks for Large-Vocabulary Speech Recognition | [arXiv](https://arxiv.org/abs/1202.0445) |
-| Deep Neural Networks for Acoustic Modeling in Speech Recognition | [arXiv](https://arxiv.org/abs/1207.0580) |
-| A Tutorial on Hidden Markov Models and Selected Applications in Speech Recognition | — |
-| The Kaldi Speech Recognition Toolkit | [arXiv](https://arxiv.org/abs/1103.0580) |
