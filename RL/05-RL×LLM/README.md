@@ -1,4 +1,4 @@
-﻿﻿﻿# 05 — RL × LLM：从 RLHF 到 GRPO 的对齐与推理训练
+﻿﻿﻿﻿# 05 — RL × LLM：从 RLHF 到 GRPO 的对齐与推理训练
 
 ## 一句话开场
 
@@ -75,7 +75,6 @@
 
 ## 拓展阅读
 
-- **Ayoub et al. (2023) "RLOO: Leave-One-Out Advantage Estimation for LLM Alignment"** — GRPO 的前身，用 Leave-One-Out 基线替代 critic。如果你想理解"去掉 critic"这个思路的演进，建议翻翻。
 - **Yu et al. (2025) "DAPO: Dynamic Sampling and Decoupled Policy Optimization" [[arXiv](https://arxiv.org/abs/2503.14442)]** — 2025 年的进一步解耦方案：policy 和 reward 解耦训练、动态采样策略。代表 GRPO 之后的演进方向。
 
 
