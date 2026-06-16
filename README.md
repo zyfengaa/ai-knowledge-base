@@ -59,13 +59,13 @@ MoE + Agent + MLLM (2024-)
 DeepSeek R1 (2025) — 开源推理模型 [[arXiv](https://arxiv.org/abs/2501.12948)]
   └─ 核心 ★ GRPO 大规模 RL 训练首次产出可媲美闭源的推理模型
       ↓
-GPT-4o / Claude 4 (2025) — 原生多模态 LLM 成熟
+GPT-4o / Claude 4 (2025) — 原生多模态 LLM 成熟 [[OpenAI](https://openai.com/index/hello-gpt-4o/) | [Anthropic](https://www.anthropic.com/news/claude-4)]
   └─ 核心 ★ 语音/图像/文本统一处理，多模态不再是"外挂"
       ↓
 DeepSeek V3 (2025) — 高效 MoE 训练里程碑 [[arXiv](https://arxiv.org/abs/2412.19437)]
   └─ 核心 ★ 大幅降低 MoE 训练成本，验证"更少算力、更好数据"路线
       ↓
-Gemini 2.5 / Llama 4 (2025) — 百万级上下文 + Agent 原生
+Gemini 2.5 / Llama 4 (2025) — 百万级上下文 + Agent 原生 [[Google](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/) | [Meta](https://ai.meta.com/blog/llama-4-multimodal-intelligence/)]
   └─ 扩展 · 上下文窗口从 128K 迈向 1M+，模型原生支持工具调用
 ```
 
@@ -98,16 +98,16 @@ ReAct (2023) — 「思考→行动→观察」循环
   └─ Computer Use 让 Agent 操作浏览器/桌面
   └─ 但长期自主仍是开放问题，安全护栏不成熟
       ↓
-OpenAI Deep Research / Anthropic Computer Use (2025)
+OpenAI Deep Research / Anthropic Computer Use (2025) [[OpenAI](https://openai.com/index/introducing-deep-research/) | [Anthropic](https://www.anthropic.com/news/3-5-models-and-computer-use)]
   └─ 核心 ★ Agent 从"调 API"进化到"自主浏览网页/操作桌面/生成报告"
       ↓
-OpenAI Agents SDK / Google Agent-to-Agent 协议 (2025)
+OpenAI Agents SDK / Google Agent-to-Agent 协议 (2025) [[OpenAI](https://openai.com/index/new-tools-for-building-agents/) | [Google](https://github.com/google/agent-to-agent)]
   └─ 核心 ★ Agent 开发框架标准化，不同厂商 Agent 开始能互相通信协作
       ↓
-MCP 协议广泛采用 (2025)
+MCP 协议广泛采用 (2025) [[Anthropic](https://www.anthropic.com/news/model-context-protocol)]
   └─ 核心 ★ 从 Anthropic 提案变成行业事实标准，工具接口统一化落地
       ↓
-Cline / Codex CLI / Cursor Agent 模式 (2025-2026)
+Cline / Codex CLI / Cursor Agent 模式 (2025-2026) [[Cline](https://github.com/cline/cline) | [Codex CLI](https://github.com/openai/codex-cli) | [Cursor](https://www.cursor.com/)]
   └─ 扩展 · Coding Agent 从 demo 变成日常开发工具
   └─ 扩展 · Coding Agent 从"demo"变成日常开发工具，AI 写代码占比持续提升
 ```
@@ -151,7 +151,7 @@ GRPO (2024) — 系统化组归一化，开箱即用 [[arXiv](https://arxiv.org/
 Reinforce++ / DAPO (2025) — GRPO 的工程增强版
   └─ R1 的训练引擎，进一步解耦 policy/reward，优化采样效率
       ↓
-推理模型训练范式成熟：o1 / o3 / R1 (2024-2025)
+推理模型训练范式成熟：o1 / o3 / R1 (2024-2025) [[OpenAI](https://openai.com/index/introducing-openai-o1-preview/) | [DeepSeek](https://arxiv.org/abs/2501.12948)]
   └─ 核心 ★ RL 不再只是"对齐工具"，而是成为模型推理能力本身的核心训练方法
       ↓
 GRPO 全面落地 (2025-2026)
@@ -181,7 +181,7 @@ BLIP-2 / LLaVA (2023) — 「连接器」范式的关键转折
   └─ 动态分辨率、端到端训练，统一理解与生成（Emu3）
   └─ 正快速向视频理解和多模态 Agent 方向演进
 ↓
-GPT-4o / Gemini 2.0 原生多模态 (2024-2025)
+GPT-4o / Gemini 2.0 原生多模态 (2024-2025) [[OpenAI](https://openai.com/index/hello-gpt-4o/) | [Google](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/)]
   └─ 核心 ★ 语音/图像/文本统一到一个模型中，不再是"视觉编码器 + LLM"的外挂方案
       ↓
 Sora / 可灵 / Veo (2024-2025) — 视频生成全面爆发
@@ -218,10 +218,10 @@ DiT (2023) — Transformer 替代 U-Net
   └─ 一步/少步生成，推理速度质的飞跃
   └─ 正快速向视频生成和 3D 生成扩展
 ↓
-FLUX.1 / SD3 / Playground v3 (2024)
+FLUX.1 / SD3 / Playground v3 (2024) [[Black Forest Labs](https://blackforestlabs.ai/announcements/) | [Stability AI](https://stability.ai/news/stable-diffusion-3)]
   └─ 核心 ★ DiT 架构全面取代 U-Net，图像质量显著提升，提示遵循度大幅改善
       ↓
-Sora 类视频生成全面爆发 (2024-2025)
+Sora 类视频生成全面爆发 (2024-2025) [[OpenAI](https://openai.com/index/sora/)]
   └─ 核心 ★ DiT + 时空注意力→视频生成，多个开源方案（CogVideo / Open-Sora / 可灵）跟进
       ↓
 3D 生成走向实用 (2025-2026)
@@ -256,7 +256,7 @@ Conformer (2020) — CNN + Transformer 混合编码器
 流式多语言模型成熟 (2024-2025) [[arXiv](https://arxiv.org/abs/2410.04487)]
   └─ 扩展 · Whisper 之后的流式方案（SenseVoice / Qwen-Audio）在延迟和准确率上显著提升
 
-GPT-4o 语音模式 / Gemini Live (2024-2025)
+GPT-4o 语音模式 / Gemini Live (2024-2025) [[OpenAI](https://openai.com/index/gpt-4o/) | [Google](https://blog.google/products/gemini/gemini-live/)]
   └─ 核心 ★ 语音对话延迟降到 200ms 级，情感/语气/副语言信息被模型理解和生成
 ```
 
