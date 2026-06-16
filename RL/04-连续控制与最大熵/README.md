@@ -1,4 +1,4 @@
-﻿﻿﻿# 04 — 连续控制与最大熵：从 DDPG 到 SAC
+﻿﻿﻿﻿﻿# 04 — 连续控制与最大熵：从 DDPG 到 SAC
 
 ## 一句话开场
 
@@ -44,7 +44,7 @@
 
 ## 精选论文
 
-**Lillicrap et al. (2016) "Continuous Control with Deep Reinforcement Learning" (DDPG)**
+**Lillicrap et al. (2016) "Continuous Control with Deep Reinforcement Learning" (DDPG) [[arXiv](https://arxiv.org/abs/1509.02971)]**
 
 - **一句话定位**：将 DQN 扩展到连续动作空间的首篇工作，Actor-Critic 连续控制的起点
 - **阅读重点**：第 3 节——算法伪代码 + Actor/Critic 网络设计
@@ -58,7 +58,7 @@
 - **时间分配建议**：选读。重点读第 3 节（两个 Q 网络的设计直觉），约 15 分钟
 - **与本模块的关系**：回答了"DDPG 的高估问题怎么修"
 
-**Haarnoja et al. (2018) "Soft Actor-Critic: Off-Policy Maximum Entropy Deep RL with a Stochastic Actor" (SAC)**
+**Haarnoja et al. (2018) "Soft Actor-Critic: Off-Policy Maximum Entropy Deep RL with a Stochastic Actor" (SAC) [[arXiv](https://arxiv.org/abs/1801.01290)]**
 
 - **一句话定位**：最大熵框架下的连续控制 SOTA，自动调温让探索不再依赖超参数调优
 - **阅读重点**：第 3-4 节——最大熵目标推导 + 自动温度调节

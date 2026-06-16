@@ -1,4 +1,4 @@
-﻿<<<<<<< HEAD
+﻿﻿﻿﻿﻿﻿﻿<<<<<<< HEAD
 ﻿﻿# ??? ��ģ̬ / �Ӿ�-���� (Multimodal / Vision-Language) ϵͳ��ѧϰ��ϵ
 
 > ��ģ��ͬʱ����Ӿ������ԣ����Ӿ�������Ϊ����ˣ�ͨ����ģ̬���뽨����������ռ䣬���� LLM �ں�ʵ��ͼ������������Ի������ɡ�
@@ -370,12 +370,12 @@ flowchart LR
 
 | 模块 | 核心篇数 | 拓展篇数 | 核心论文 |
 |------|---------|---------|---------|
-| 01-视觉编码器 | 3 | 2-3 | ViT(2021), Swin(2021), EVA-02(2023) |
-| 02-跨模态对齐 | 4 | 2-3 | CLIP(2021), SigLIP(2023), BLIP(2022), DataComp(2023) |
-| 03-多模态融合架构 | 5 | 2-3 | LLaVA(2023), LLaVA-1.5(2024), BLIP-2(2023), InternVL(2024), Qwen-VL(2024) |
-| 04-训练数据与规模化 | 3 | 2-3 | DataComp(2023), LLaVA数据配比(2024), Scaling Laws for VLMs(2024) |
-| 05-评估体系 | 3 | 2 | MMBench(2023), MMMU(2024), MMVP(2024) |
-| 06-视频多模态与前沿挑战 | 3 | 2 | ImageBind(2023), Video-LLaMA(2023), Emu3(2024) |
+| 01-视觉编码器 | 3 | 2-3 | ViT(2021) [[arXiv](https://arxiv.org/abs/2010.11929)], Swin(2021) [[arXiv](https://arxiv.org/abs/2103.14030)], EVA-02(2023) [[arXiv](https://arxiv.org/abs/2303.11331)] |
+| 02-跨模态对齐 | 4 | 2-3 | CLIP(2021) [[arXiv](https://arxiv.org/abs/2103.00020)], SigLIP(2023) [[arXiv](https://arxiv.org/abs/2303.15343)], BLIP(2022) [[arXiv](https://arxiv.org/abs/2201.12086)], DataComp(2023) [[arXiv](https://arxiv.org/abs/2304.09809)] |
+| 03-多模态融合架构 | 5 | 2-3 | LLaVA(2023) [[arXiv](https://arxiv.org/abs/2304.08485)], LLaVA-1.5(2024) [[arXiv](https://arxiv.org/abs/2310.03744)], BLIP-2(2023) [[arXiv](https://arxiv.org/abs/2301.12597)], InternVL(2024) [[arXiv](https://arxiv.org/abs/2312.14238)], Qwen-VL(2024) [[arXiv](https://arxiv.org/abs/2308.12966)] |
+| 04-训练数据与规模化 | 3 | 2-3 | DataComp(2023) [[arXiv](https://arxiv.org/abs/2304.09809)], LLaVA数据配比(2024), Scaling Laws for VLMs(2024) |
+| 05-评估体系 | 3 | 2 | MMBench(2023) [[arXiv](https://arxiv.org/abs/2307.06281)], MMMU(2024) [[arXiv](https://arxiv.org/abs/2311.05542)], MMVP(2024) [[arXiv](https://arxiv.org/abs/2312.13068)] |
+| 06-视频多模态与前沿挑战 | 3 | 2 | ImageBind(2023) [[arXiv](https://arxiv.org/abs/2305.05665)], Video-LLaMA(2023) [[arXiv](https://arxiv.org/abs/2306.02858)], Emu3(2024) [[arXiv](https://arxiv.org/abs/2409.18840)] |
 | **合计** | **21** | **12-17** | **筛选标准：每模块 3-5 篇，覆盖范式切换节点** |
 
 > 筛选原则：每模块只保留**节点性论文**（提出新范式的第一篇 / 验证可行性的第一篇 / 事实标准的奠基篇）。拓展论文不移除，放在各模块的 `拓展/` 文件夹下。

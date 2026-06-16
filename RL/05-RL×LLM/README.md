@@ -1,4 +1,4 @@
-﻿﻿﻿﻿# 05 — RL × LLM：从 RLHF 到 GRPO 的对齐与推理训练
+﻿﻿﻿﻿﻿﻿﻿# 05 — RL × LLM：从 RLHF 到 GRPO 的对齐与推理训练
 
 ## 一句话开场
 
@@ -50,21 +50,21 @@
 - **时间分配建议**：必读。精读第 3 节（算法核心），第 4 节（Atari 实验）可扫读
 - **与本模块的关系**：回答了"人类定性偏好如何变成定量奖励"
 
-**Ouyang et al. (2022) "Training Language Models to Follow Instructions with Human Feedback" (InstructGPT)**
+**Ouyang et al. (2022) "Training Language Models to Follow Instructions with Human Feedback" (InstructGPT) [[arXiv](https://arxiv.org/abs/2203.02155)]**
 
 - **一句话定位**：将 RLHF 流程工程化并在 GPT-3 上验证的工程里程碑
 - **阅读重点**：第 3 节——三阶段训练流程（SFT → RM → PPO）
 - **时间分配建议**：必读。重点读第 3 节的 Fig.2（整体流程图），约 20 分钟
 - **与本模块的关系**：回答了"RLHF 在 LLM 上的完整工程实现"
 
-**Rafailov et al. (2023) "Direct Preference Optimization: Your Language Model is Secretly a Reward Model" (DPO)**
+**Rafailov et al. (2023) "Direct Preference Optimization: Your Language Model is Secretly a Reward Model" (DPO) [[arXiv](https://arxiv.org/abs/2305.18290)]**
 
 - **一句话定位**：用分类损失替代 RL 循环的对齐新范式，引发广泛讨论
 - **阅读重点**：第 3-4 节——DPO 损失推导 + 与 PPO 的对比
 - **时间分配建议**：选读。重点读第 3 节（DPO 目标函数推导），约 30 分钟
 - **与本模块的关系**：提供了 RLHF 的替代路线——不用 RL 也能做对齐
 
-**Shao et al. (2024) "DeepSeekMath: Pushing the Limits of LLM Math Reasoning" (GRPO)**
+**Shao et al. (2024) "DeepSeekMath: Pushing the Limits of LLM Math Reasoning" (GRPO) [[arXiv](https://arxiv.org/abs/2402.03300)]**
 
 - **一句话定位**：去掉 critic 的分组归一化方法，成为 DeepSeek-R1 的训练核心
 - **阅读重点**：第 2.3 节——GRPO 算法伪代码 + 组内 advantage 计算

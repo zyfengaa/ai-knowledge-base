@@ -1,4 +1,4 @@
-﻿# 🎮 强化学习 (Reinforcement Learning) 系统性学习路径
+﻿﻿# 🎮 强化学习 (Reinforcement Learning) 系统性学习路径
 
 > 智能体（Agent）通过在动态环境中执行动作、接收奖励反馈，学习最优决策策略——即"从试错中学会最大化累积回报"。
 
@@ -174,7 +174,7 @@ RL 的输入是**状态**（state）和**奖励**（reward）。早期用低维�
 | 04-连续控制与最大熵 | 3 | 1 | DDPG(2016) [[arXiv](https://arxiv.org/abs/1509.02971)], TD3(2018) [[arXiv](https://arxiv.org/abs/1802.09477)], SAC(2018) [[arXiv](https://arxiv.org/abs/1801.01290)] |
 | 05-RL×LLM | 4 | 2 | Christiano(2017) [[arXiv](https://arxiv.org/abs/1706.03741)], InstructGPT(2022) [[arXiv](https://arxiv.org/abs/2203.02155)], DPO(2023) [[arXiv](https://arxiv.org/abs/2305.18290)], GRPO(2024) [[arXiv](https://arxiv.org/abs/2402.03300)] |
 | 05-RL×LLM (2025-) | 3 | — | o1/o3 [[OpenAI](https://openai.com/index/introducing-openai-o1-preview/)], DAPO [[arXiv](https://arxiv.org/abs/2503.14442)], Reinforce++ |
-| 06-离线RL与前沿挑战 | 3 | 1 | Offline RL Survey(2020), CQL(2020), Decision Transformer(2021) |
+| 06-离线RL与前沿挑战 | 3 | 1 | Offline RL Survey(2020) [[arXiv](https://arxiv.org/abs/2005.01643)], CQL(2020) [[arXiv](https://arxiv.org/abs/2006.04779)], Decision Transformer(2021) [[arXiv](https://arxiv.org/abs/2106.01345)] |
 | **合计** | **22** | **8** | **扩展到 2025-2026 关键进展** |
 
 > 筛选原则：每模块只保留**节点性论文**（提出新范式的第一篇 / 验证可行性的第一篇 / 事实标准的奠基篇）。拓展论文不移除，放在各模块的 `拓展/` 文件夹下。

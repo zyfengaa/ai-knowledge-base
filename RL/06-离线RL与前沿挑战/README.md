@@ -1,4 +1,4 @@
-﻿﻿﻿# 06 — 离线 RL 与前沿挑战：从静态数据集到决策基础模型
+﻿﻿﻿﻿# 06 — 离线 RL 与前沿挑战：从静态数据集到决策基础模型
 
 ## 一句话开场
 
@@ -67,7 +67,7 @@
 
 ## 拓展阅读
 
-- **Kostrikov et al. (2022) "Offline Reinforcement Learning with Implicit Q-Learning" (IQL)** — 通过 expectile 回归隐式约束的 Offline RL 方法。如果你对 CQL 之外的 Offline RL 方法感兴趣可以翻翻。
+- **Kostrikov et al. (2022) "Offline Reinforcement Learning with Implicit Q-Learning" (IQL) [[arXiv](https://arxiv.org/abs/2110.06169)]** — 通过 expectile 回归隐式约束的 Offline RL 方法。如果你对 CQL 之外的 Offline RL 方法感兴趣可以翻翻。
 
 
 > 拓展论文不移除，放在各模块的 `拓展/` 文件夹下。核心论文在模块根目录。

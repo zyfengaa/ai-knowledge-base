@@ -1,4 +1,4 @@
-﻿﻿﻿# 02 — 深度 Q 网络：从 DQN 到 Rainbow
+﻿﻿﻿﻿# 02 — 深度 Q 网络：从 DQN 到 Rainbow
 
 ## 一句话开场
 
@@ -41,7 +41,7 @@
 
 ## 精选论文
 
-**Mnih et al. (2015) "Human-level Control through Deep Reinforcement Learning" (DQN)**
+**Mnih et al. (2015) "Human-level Control through Deep Reinforcement Learning" (DQN) [[arXiv](https://arxiv.org/abs/1312.5602)]**
 
 - **一句话定位**：深度 RL 的开山之作，CNN + Experience Replay + Target Network 在 Atari 上超越人类
 - **阅读重点**：第 3-4 节——算法伪代码 + 三大设计原理

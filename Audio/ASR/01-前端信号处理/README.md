@@ -1,4 +1,4 @@
-﻿﻿# 01 — 信号输入
+﻿﻿﻿# 01 — 信号输入
 
 ## 波形到特征，是怎么过来的？
 
@@ -22,7 +22,7 @@ FBank 的维度之间是相关的（毕竟相邻滤波器有重叠），如果�
 
 ## 精选论文
 
-**Davis & Mermelstein (1980) "Comparison of Parametric Representations for Monosyllabic Word Recognition" — MFCC**
+**Davis & Mermelstein (1980) "Comparison of Parametric Representations for Monosyllabic Word Recognition" [[IEEE](https://ieeexplore.ieee.org/document/1163420)] — MFCC**
 
 这篇是 MFCC 的原始论文。技术上很简单：预加重 → 分帧 → 加窗 → FFT → 梅尔滤波器组 → log → DCT → MFCC。但它的影响之大，四十年后所有 ASR 系统（包括 Whisper）依然在用这个 pipeline。写个几千字的综述都讲不完这条线，但核心思想其实就是上面那几行字。愿意的话了解一下具体计算过程就行，不需要背公式。
 

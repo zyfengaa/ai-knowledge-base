@@ -1,4 +1,4 @@
-﻿﻿﻿# 🗣️ 语音合成（Text-to-Speech）系统性学习体系
+﻿﻿﻿﻿﻿﻿﻿﻿﻿# 🗣️ 语音合成（Text-to-Speech）系统性学习体系
 
 > 将文字转化为自然流利的语音——输入是文本序列，输出是对应的语音波形序列。核心挑战在于：**文本是离散的、稀疏的符号系统，语音是连续的、高维的声学信号**，两者之间的映射充满了歧义（同文异音、异文同音、韵律无标注）。
 
@@ -175,12 +175,12 @@ flowchart LR
 
 | 模块 | 核心篇数 | 拓展篇数 | 核心论文 |
 |------|---------|---------|---------|
-| 01-文本前端 | 1 | 1 | Tan Survey(2021) |
-| 02-声学建模 | 4 | 1 | Tacotron(2017), Tacotron2(2018), FastSpeech(2019), FastSpeech2(2021) |
-| 03-波形生成 | 2 | 2 | WaveNet(2016), HiFi-GAN(2020) |
-| 04-统一端到端 | 2 | 1 | VITS(2021), NaturalSpeech(2022) |
-| 05-大模型与零样本 | 3 | 1 | VALL-E(2023), VoiceBox(2023), CosyVoice(2024) |
-| 06-可控性与个性化 | 2 | 2 | GST(2018), YourTTS(2022) |
+| 01-文本前端 | 1 | 1 | Tan Survey(2021) [[arXiv](https://arxiv.org/abs/2106.15561)] |
+| 02-声学建模 | 4 | 1 | Tacotron(2017) [[arXiv](https://arxiv.org/abs/1703.10135)], Tacotron2(2018) [[arXiv](https://arxiv.org/abs/1712.05884)], FastSpeech(2019) [[arXiv](https://arxiv.org/abs/1905.09263)], FastSpeech2(2021) [[arXiv](https://arxiv.org/abs/2006.04558)] |
+| 03-波形生成 | 2 | 2 | WaveNet(2016) [[arXiv](https://arxiv.org/abs/1609.03499)], HiFi-GAN(2020) [[arXiv](https://arxiv.org/abs/2010.05646)] |
+| 04-统一端到端 | 2 | 1 | VITS(2021) [[arXiv](https://arxiv.org/abs/2106.06103)], NaturalSpeech(2022) [[arXiv](https://arxiv.org/abs/2205.04421)] |
+| 05-大模型与零样本 | 3 | 1 | VALL-E(2023) [[arXiv](https://arxiv.org/abs/2301.02111)], VoiceBox(2023) [[arXiv](https://arxiv.org/abs/2306.15687)], CosyVoice(2024) [[arXiv](https://arxiv.org/abs/2407.05407)] |
+| 06-可控性与个性化 | 2 | 2 | GST(2018) [[arXiv](https://arxiv.org/abs/1803.09017)], YourTTS(2022) [[arXiv](https://arxiv.org/abs/2112.02418)] |
 | **合计** | **14** | **8** | **筛选标准：每模块2-5篇，覆盖核心节点** |
 
 > 筛选原则：每模块只保留**节点性论文**（提出新范式的第一篇 / 验证可行性的第一篇 / 事实标准的奠基篇）。拓展论文不移除，放在各模块的 `拓展/` 文件夹下。
