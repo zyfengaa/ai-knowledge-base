@@ -1,4 +1,4 @@
-﻿﻿# 06 — 视频多模态与前沿挑战
+﻿﻿﻿﻿﻿﻿# 06 — 视频多模态与前沿挑战
 
 ## 一句话开场
 
@@ -36,19 +36,19 @@
 
 ## 精选论文
 
-**Girdhar et al. (2023) 'ImageBind: One Embedding Space To Bind Them All'**
+**Girdhar et al. (2023) 'ImageBind: One Embedding Space To Bind Them All' [[arXiv](https://arxiv.org/abs/2305.05665)]**
 - 一句话定位：以图像为锚点，通过图像与其他模态的成对数据对齐全部 6 种模态（文本/音频/深度/热力/IMU）
 - 阅读重点：§3 Method（对齐策略）、§4 Experiments（跨模态检索和 zero-shot 迁移）
 - 时间分配建议：30 分钟精读对齐策略，实验可泛读
 - 与本模块的关系：展示了"图文对齐"如何扩展到更多模态
 
-**Zhang et al. (2023) 'Video-LLaMA: An Instruction-tuned Audio-Visual Language Model for Video Understanding'**
+**Zhang et al. (2023) 'Video-LLaMA: An Instruction-tuned Audio-Visual Language Model for Video Understanding' [[arXiv](https://arxiv.org/abs/2306.02858)]**
 - 一句话定位：最早的开源 Video-LLM 之一，用 Q-Former 对视频帧做时序压缩后输入 LLM
 - 阅读重点：§3 Architecture（视频帧处理 + 时序压缩模块）
 - 时间分配建议：30 分钟精读视频处理架构
 - 与本模块的关系：Video-LLM 的代表工作，展示"帧编码 + 时序压缩"的标准范式
 
-**Sun et al. (2024) 'Emu3: Next-Token Prediction is All You Need' (Emu3)**
+**Sun et al. (2024) 'Emu3: Next-Token Prediction is All You Need' (Emu3) [[arXiv](https://arxiv.org/abs/2409.18840)]**
 - 一句话定位：用离散 token 统一理解和生成（文本 + 图像 + 视频都做 next-token prediction），挑战"diffusion 生成不可替代"的共识
 - 阅读重点：§2 Method（离散 token 统一框架）、§3 Results（理解和生成的联合性能）
 - 时间分配建议：45 分钟精读统一架构部分，关注能否替代 diffusion
@@ -57,8 +57,8 @@
 ---
 
 ## 拓展阅读
-- **Guo et al. (2024) 'The Dawn of LMMs: Preliminary Explorations with GPT-4V(ision)'** — GPT-4V 的综合能力评估，展示了当前最强 VLM 的能力边界。看完可以明确知道"VLM 目前能做到什么、还做不到什么"
-- **Wang et al. (2023) 'CogAgent: A Visual Language Model for GUI Agents'** — VLM 用于 GUI Agent 的代表工作，展示 VLM 在"识别屏幕 + 执行操作"方向的应用
+- **Guo et al. (2024) 'The Dawn of LMMs: Preliminary Explorations with GPT-4V(ision)' [[arXiv](https://arxiv.org/abs/2309.17421)]** — GPT-4V 的综合能力评估，展示了当前最强 VLM 的能力边界。看完可以明确知道"VLM 目前能做到什么、还做不到什么"
+- **Wang et al. (2023) 'CogAgent: A Visual Language Model for GUI Agents' [[arXiv](https://arxiv.org/abs/2312.08914)]** — VLM 用于 GUI Agent 的代表工作，展示 VLM 在"识别屏幕 + 执行操作"方向的应用
 
 ---
 

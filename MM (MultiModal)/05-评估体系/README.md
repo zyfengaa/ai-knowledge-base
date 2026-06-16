@@ -1,4 +1,4 @@
-﻿﻿﻿# 05 — 评估体系
+﻿﻿﻿﻿﻿﻿﻿# 05 — 评估体系
 
 ## 一句话开场
 
@@ -37,19 +37,19 @@
 
 ## 精选论文
 
-**Liu et al. (2023) 'MMBench: Is Your Multi-modal Model an All-around Player?'**
+**Liu et al. (2023) 'MMBench: Is Your Multi-modal Model an All-around Player?' [[arXiv](https://arxiv.org/abs/2307.06281)]**
 - 一句话定位：第一个系统化的 VLM benchmark，覆盖 20 种能力维度，首创"circular evaluation"避免 bias
 - 阅读重点：§3 Abilities Definition and Questions（20 种能力定义）、§4 Circular Evaluation（评估方法）
 - 时间分配建议：30 分钟精读能力分类体系，知道 VLM 应该被测评哪些方面
 - 与本模块的关系：综合 VLM benchmark 的开创者
 
-**Yue et al. (2024) 'MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI'**
+**Yue et al. (2024) 'MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI' [[arXiv](https://arxiv.org/abs/2311.05542)]**
 - 一句话定位：大学级别多学科多模态评测集（6 学科 30 个细分领域），测试 VLM 的知识深度而非广度
 - 阅读重点：§3 Data Construction（数据构建流程和人工校验）
 - 时间分配建议：30 分钟精读数据构建方法和评估协议
 - 与本模块的关系：VLM 的"高考卷"，测试真正的理解和推理
 
-**Tong et al. (2024) 'Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs' (MMVP)**
+**Tong et al. (2024) 'Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs' (MMVP) [[arXiv](https://arxiv.org/abs/2312.13068)]**
 - 一句话定位：系统揭示 VLM 在细粒度视觉理解上的系统性失败——空间关系、物体计数、属性绑定
 - 阅读重点：§3 Visual Shortcomings（9 类失败模式分析）、§4.2 CLIP Failure Modes
 - 时间分配建议：45 分钟精读失败模式分析，可以跳过部分实验
@@ -58,8 +58,8 @@
 ---
 
 ## 拓展阅读
-- **Li et al. (2024) 'Evaluating Object Hallucination in Multimodal Large Language Models' (POPE)** — 评估 VLM 幻觉的标准方法。如果你要实际部署 VLM 做图片问答，建议看看
-- **Wang et al. (2024) 'MMMU-Pro: A More Robust Multi-discipline Multimodal Understanding Benchmark'** — MMMU 的加强版
+- **Li et al. (2024) 'Evaluating Object Hallucination in Multimodal Large Language Models' (POPE) [[arXiv](https://arxiv.org/abs/2307.01179)]** — 评估 VLM 幻觉的标准方法。如果你要实际部署 VLM 做图片问答，建议看看
+- **Wang et al. (2024) 'MMMU-Pro: A More Robust Multi-discipline Multimodal Understanding Benchmark' [[arXiv](https://arxiv.org/abs/2406.01574)]** — MMMU 的加强版
 
 ---
 

@@ -1,4 +1,4 @@
-﻿# 04 — 训练数据与规模化
+﻿﻿﻿﻿﻿# 04 — 训练数据与规模化
 
 ## 一句话开场
 
@@ -36,19 +36,19 @@
 
 ## 精选论文
 
-**Gadre et al. (2023) 'DataComp: In search of the next generation of multimodal datasets'**
+**Gadre et al. (2023) 'DataComp: In search of the next generation of multimodal datasets' [[arXiv](https://arxiv.org/abs/2304.09809)]**
 - 一句话定位：系统研究图文数据配比对 CLIP 训练的影响，提供不同 budget 下的最优数据策略
 - 阅读重点：§3-4 Experimental Setup and Results（不同数据策略的消融实验）
 - 时间分配建议：45 分钟精读实验设计和方法论，了解"什么数据最有用"
 - 与本模块的关系：数据策略的参考标准
 
-**Li et al. (2022) 'BLIP: Bootstrapping Language-Image Pre-training'**
+**Li et al. (2022) 'BLIP: Bootstrapping Language-Image Pre-training' [[arXiv](https://arxiv.org/abs/2201.12086)]**
 - 一句话定位：CapFilt 机制用生成+过滤提升数据质量，展示了"数据质量 > 数据数量"的一个有力证据
 - 阅读重点：§3.1 CapFilt（核心数据增强机制）
 - 时间分配建议：30 分钟精读 CapFilt 流程
 - 与本模块的关系：生成式数据增强的代表工作
 
-**Liu et al. (2024) 'Improved Baselines with Visual Instruction Tuning' (LLaVA 1.5)**
+**Liu et al. (2024) 'Improved Baselines with Visual Instruction Tuning' (LLaVA 1.5) [[arXiv](https://arxiv.org/abs/2310.03744)]**
 - 一句话定位：虽然不是专门的数据论文，但其数据配比实验是关键参考——混合数据源好于单一数据源
 - 阅读重点：§2.2 Data Mixture（数据配比实验）
 - 时间分配建议：20 分钟阅读数据配比部分
@@ -57,8 +57,8 @@
 ---
 
 ## 拓展阅读
-- **Schuhmann et al. (2022) 'LAION-5B: An open large-scale dataset for training next generation image-text models'** — 5B 图文对的开放数据集，爬虫流程和数据过滤的参考范本
-- **Cherti et al. (2023) 'Reproducible scaling laws for contrastive language-image learning'** — CLIP 训练的 Scaling Law 研究，资源允许时可以复现
+- **Schuhmann et al. (2022) 'LAION-5B: An open large-scale dataset for training next generation image-text models' [[arXiv](https://arxiv.org/abs/2210.08402)]** — 5B 图文对的开放数据集，爬虫流程和数据过滤的参考范本
+- **Cherti et al. (2023) 'Reproducible scaling laws for contrastive language-image learning' [[arXiv](https://arxiv.org/abs/2302.00487)]** — CLIP 训练的 Scaling Law 研究，资源允许时可以复现
 
 ---
 

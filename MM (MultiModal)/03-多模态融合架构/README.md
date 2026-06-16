@@ -1,4 +1,4 @@
-﻿﻿# 03 — 多模态融合架构
+﻿﻿﻿﻿﻿﻿﻿# 03 — 多模态融合架构
 
 ## 一句话开场
 
@@ -36,25 +36,25 @@
 
 ## 精选论文
 
-**Liu et al. (2023) 'Visual Instruction Tuning' (LLaVA)**
+**Liu et al. (2023) 'Visual Instruction Tuning' (LLaVA) [[arXiv](https://arxiv.org/abs/2304.08485)]**
 - 一句话定位：定义 "ViT + MLP Projector + LLM" 这个最简融合范式，开源自 VLM 的事实标准
 - 阅读重点：§3 Architecture（MLP projector 设计）、§3.1 Visual Instruction Tuning（GPT-4 生成指令数据）
 - 时间分配建议：40 分钟精读架构，数据生成流程了解即可
 - 与本模块的关系：最简融合方案的定义者
 
-**Liu et al. (2024) 'Improved Baselines with Visual Instruction Tuning' (LLaVA 1.5)**
+**Liu et al. (2024) 'Improved Baselines with Visual Instruction Tuning' (LLaVA 1.5) [[arXiv](https://arxiv.org/abs/2310.03744)]**
 - 一句话定位：LLaVA 的实用改进版——数据配比、MLP 加层、分辨率提升，ACL 2024
 - 阅读重点：§2.3 Training Recipes（数据配比和训练技巧）
 - 时间分配建议：30 分钟精读训练细节
 - 与本模块的关系：展示了"简单架构 + 正确数据 + 合理训练"的实用效果
 
-**Li et al. (2023) 'BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and LLMs'**
+**Li et al. (2023) 'BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and LLMs' [[arXiv](https://arxiv.org/abs/2301.12597)]**
 - 一句话定位：Q-Former 用可学习 query 从冻结 ViT 提取特征再喂给冻结 LLM，训练效率极高
 - 阅读重点：§3 Method（Q-Former 架构和两阶段训练）
 - 时间分配建议：45 分钟精读 Q-Former 核心设计
 - 与本模块的关系：另一种重要的融合思路（压缩式 query）
 
-**Chen et al. (2024) 'How Far Are We to GPT-4V?' (InternVL 1.5/2.0)**
+**Chen et al. (2024) 'How Far Are We to GPT-4V?' (InternVL 1.5/2.0) [[arXiv](https://arxiv.org/abs/2312.14238)]**
 - 一句话定位：端到端训练大规模 ViT (6B) + LLM，动态分辨率，开源 VLM 逼近 GPT-4V 水平
 - 阅读重点：§3 Architecture（ViT-LLM 共享训练策略）、§4 Dynamic Resolution
 - 时间分配建议：60 分钟精读架构和动态分辨率机制
@@ -63,9 +63,9 @@
 ---
 
 ## 拓展阅读
-- **Alayrac et al. (2022) 'Flamingo'** — DeepMind 的 interleaved cross-attention VLM，展示"visual tokens 插入 LLM 各层"的融合方式
-- **Bai et al. (2023) 'Qwen-VL'** — 阿里 Qwen-VL 系列，MLP projector + 位置编码合成，支持多图输入
-- **Dai et al. (2024) 'LLaMA-Adapter V2'** — 参数高效微调方案，用少量可学习参数为 LLM 增加视觉能力
+- **Alayrac et al. (2022) 'Flamingo' [[arXiv](https://arxiv.org/abs/2204.14198)]** — DeepMind 的 interleaved cross-attention VLM，展示"visual tokens 插入 LLM 各层"的融合方式
+- **Bai et al. (2023) 'Qwen-VL' [[arXiv](https://arxiv.org/abs/2308.12966)]** — 阿里 Qwen-VL 系列，MLP projector + 位置编码合成，支持多图输入
+- **Dai et al. (2024) 'LLaMA-Adapter V2' [[arXiv](https://arxiv.org/abs/2304.15010)]** — 参数高效微调方案，用少量可学习参数为 LLM 增加视觉能力
 
 ---
 

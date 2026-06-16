@@ -1,4 +1,4 @@
-﻿# 02 — 跨模态对齐
+﻿﻿﻿﻿# 02 — 跨模态对齐
 
 ## 一句话开场
 
@@ -36,19 +36,19 @@
 
 ## 精选论文
 
-**Radford et al. (2021) 'Learning Transferable Visual Models From Natural Language Supervision' (CLIP)**
+**Radford et al. (2021) 'Learning Transferable Visual Models From Natural Language Supervision' (CLIP) [[arXiv](https://arxiv.org/abs/2103.00020)]**
 - 一句话定位：开创"4亿图文对 + 对比学习"的双塔对齐范式，零样本分类和图文检索的工业标准
 - 阅读重点：§2 Approach（对比学习目标 + 双塔架构）、§3 Zero-Shot Transfer（如何用文本 prompt 做分类）
 - 时间分配建议：60 分钟精读核心方法，零样本实验可泛读
 - 与本模块的关系：跨模态对齐的奠基工作
 
-**Zhai et al. (2023) 'Sigmoid Loss for Language Image Pre-Training' (SigLIP)**
+**Zhai et al. (2023) 'Sigmoid Loss for Language Image Pre-Training' (SigLIP) [[arXiv](https://arxiv.org/abs/2303.15343)]**
 - 一句话定位：用 sigmoid loss 替代 softmax 使对比学习对 batch size 不再敏感，成为 DeepSeek-VL / InternVL2 等最新 VLM 的实际选择
 - 阅读重点：§3 Method（Sigmoid Loss 公式推导）、§5 Experiments（和 CLIP 的对比）
 - 时间分配建议：30 分钟精读 loss 公式对比，实验可泛读
 - 与本模块的关系：CLIP 的高效改进版，当前最实用的对齐方案
 
-**Li et al. (2022) 'BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation'**
+**Li et al. (2022) 'BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation' [[arXiv](https://arxiv.org/abs/2201.12086)]**
 - 一句话定位：BLIP 引入 CapFilt（Caption + Filter）机制，用生成+过滤提升图文数据质量，同时支持理解和生成任务
 - 阅读重点：§3 Method（CapFilt 数据增强流程）、§3.2 Understanding & Generation 统一架构
 - 时间分配建议：45 分钟精读 CapFilt 机制和 MED 架构
@@ -57,8 +57,8 @@
 ---
 
 ## 拓展阅读
-- **DataComp (2023)** — 系统研究图文数据配比对 VLM 性能的影响。如果你需要实际构建训练数据集，这是必读
-- **LiT (2022)** — Locked-image Tuning，冻结 CLIP 视觉编码器只训练 text encoder。适合在已有视觉模型上快速适配
+- **DataComp (2023) [[arXiv](https://arxiv.org/abs/2304.14108)]** — 系统研究图文数据配比对 VLM 性能的影响。如果你需要实际构建训练数据集，这是必读
+- **LiT (2022) [[arXiv](https://arxiv.org/abs/2111.07991)]** — Locked-image Tuning，冻结 CLIP 视觉编码器只训练 text encoder。适合在已有视觉模型上快速适配
 
 ---
 
