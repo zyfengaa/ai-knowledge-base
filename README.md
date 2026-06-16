@@ -9,16 +9,16 @@
 ## 一张图看懂这些方向的关系
 
 ```mermaid
-flowchart LR
-    A["Transformer<br/>2017"] --> B["预训练+微调<br/>2018-2020"]
-    B --> C["Scaling Law<br/>2020-2022"]
-    C --> D["对齐革命 (RLHF/DPO)<br/>2022-2023"]
-    D --> E["MoE+Agent+MLLM<br/>2024-"]
-    D --> F["扩散模型爆发<br/>Stable Diffusion 2022-"]
-    D --> G["视觉语言模型<br/>CLIP→LLaVA 2021-2024"]
-    E --> H["Coding Agent<br/>2024-"]
-    F --> I["视频/3D 生成<br/>2024-"]
-    G --> J["多模态 Agent<br/>2025-"]
+flowchart TD
+    A[Transformer 2017] --> B[预训练+微调 2018-2020]
+    B --> C[Scaling Law 2020-2022]
+    C --> D[对齐革命 RLHF/DPO 2022-2023]
+    D --> E[MoE+Agent+MLLM 2024-]
+    D --> F[扩散模型爆发 Stable Diffusion 2022-]
+    D --> G[视觉语言模型 CLIP→LLaVA 2021-2024]
+    E --> H[Coding Agent 2024-]
+    F --> I[视频/3D 生成 2024-]
+    G --> J[多模态 Agent 2025-]
 ```
 
 ---
