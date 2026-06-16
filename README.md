@@ -8,7 +8,7 @@
 
 ## 一张图看懂这些方向的关系
 
-`mermaid
+```mermaid
 flowchart LR
     A["Transformer<br/>2017"] --> B["预训练+微调<br/>2018-2020"]
     B --> C["Scaling Law<br/>2020-2022"]
@@ -19,13 +19,13 @@ flowchart LR
     E --> H["Coding Agent<br/>2024-"]
     F --> I["视频/3D 生成<br/>2024-"]
     G --> J["多模态 Agent<br/>2025-"]
-`
+```
 
 ---
 
 ## LLM · 大语言模型
 
-`text
+```text
 Seq2Seq + Attention (~2017)
   └─ Attention 缓解了 RNN 的长距离遗忘，但序列依赖让训练无法并行
       ↓
@@ -55,11 +55,11 @@ DPO (2023) — 不用 reward model，直接在偏好数据上优化
 MoE + Agent + MLLM (2024-)
   └─ Mixtral 用稀疏激活突破参数限制，ReAct Agent 打开 LLM+工具维度
   └─ MoE 路由不均衡，Agent 可靠性无保证，多模态融合深度不够
-`
+```
 
 ## AI-Agent · 智能体
 
-`text
+```text
 Prompt Engineering (~2022)
   └─ 精心设计 Prompt 让 LLM 完成简单任务，纯文本输出
   └─ 但静态 Prompt 无法动态决策，LLM 纯文本无法调用外部工具
@@ -85,11 +85,11 @@ ReAct (2023) — 「思考→行动→观察」循环
   └─ Cline/Devin/Cursor 等编码 Agent 证明实用性
   └─ Computer Use 让 Agent 操作浏览器/桌面
   └─ 但长期自主仍是开放问题，安全护栏不成熟
-`
+```
 
 ## RL · 强化学习
 
-`text
+```text
 MDP + Bellman 方程 (1950s-1990s)
   └─ 建立了「状态/动作/奖励/转移」的数学框架
   └─ 但真实世界状态空间无限大，表格存不下
@@ -125,11 +125,11 @@ GRPO (2024) — 系统化组归一化，开箱即用
       ↓
 Reinforce++ / DAPO (2025) — GRPO 的工程增强版
   └─ R1 的训练引擎，进一步解耦 policy/reward，优化采样效率
-`
+```
 
 ## MM · 多模态
 
-`text
+```text
 CNN+RNN 浅层融合 (2015-2018)
   └─ 图像 CNN 提特征 + 文本 RNN 做推理，各自独立输出再拼一起
   └─ 效果差，跨模态信息几乎没有交互
@@ -143,17 +143,17 @@ CLIP (2021) — 对比学习双塔
   └─ 但只能做匹配/分类，不能做生成和细粒度推理
       ↓
 BLIP-2 / LLaVA (2023) — 「连接器」范式的关键转折
-  └─ 冻结大 ViT + 冻结 LLM，只训练一个轻量投影层
+  └─ 冻结大 ViT + 冻结 LLM，只训练一个轻量投影层，效果出奇好
   └─ Qwen-VL / InternVL 陆续跟进，2023-2024 年 VLM 爆发
       ↓
 原生多模态训练 (2024-)
   └─ 动态分辨率、端到端训练，统一理解与生成（Emu3）
   └─ 正快速向视频理解和多模态 Agent 方向演进
-`
+```
 
 ## SD · 扩散模型
 
-`text
+```text
 DDPM (2020)
   └─ 证明了「加噪声→学去噪」的生成方案可行
   └─ 但采样需要上千步，生成一张图要几分钟
@@ -177,11 +177,13 @@ DiT (2023) — Transformer 替代 U-Net
 一致性模型 / LCM (2023)
   └─ 一步/少步生成，推理速度质的飞跃
   └─ 正快速向视频生成和 3D 生成扩展
-`
+```
 
 ## Audio · 语音
 
-`text
+ASR 路线：
+
+```text
 HMM/GMM 经典统计框架 (1980s-2010)
   └─ 40 年 ASR 研究的底座
   └─ 声学模型/语言模型分开训，各自需要大量专家知识
@@ -199,11 +201,11 @@ Conformer (2020) — CNN + Transformer 混合编码器
       ↓
 大规模预训练：wav2vec 2.0 → HuBERT → Whisper (2020-2022)
   └─ 自监督 + 弱监督，零样本泛化远超传统方案
-`
+```
 
 TTS 路线（与 ASR 并列）：
 
-`text
+```text
 Tacotron + WaveNet (2017)
   └─ 「谱预测 + 波形生成」两阶段范式
       ↓
@@ -216,7 +218,7 @@ VITS (2021) — 端到端
 VALL-E / CosyVoice (2023-2024)
   └─ 神经编解码方案，零样本语音克隆成为可能
   └─ 多语言、自然度大幅提升
-`
+```
 
 ---
 

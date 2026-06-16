@@ -6,7 +6,7 @@
 
 ## 技术演进全景
 
-`mermaid
+```mermaid
 flowchart LR
     A[Seq2Seq+Attention<br/>~2017] --> B[Transformer<br/>2017]
     B --> C[预训练+微调<br/>2018-2020]
@@ -14,7 +14,7 @@ flowchart LR
     D --> E[对齐革命<br/>2022-2023]
     E --> F[开源生态+架构定型<br/>2023-2024]
     F --> G[MoE+Agent+MLLM<br/>2024-2025]
-`
+```
 
 > 这张图是整份知识库的"地铁线路图"——每次看新模块前，先回到这张图定位自己在哪一站。
 
