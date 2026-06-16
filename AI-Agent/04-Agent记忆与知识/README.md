@@ -1,4 +1,4 @@
-﻿﻿# 04 �� Agent ������֪ʶ
+﻿﻿﻿# 04 �� Agent ������֪ʶ
 
 ## һ�仰����
 
@@ -71,7 +71,6 @@
 ## ��չ�Ķ�
 
 - **Zhong et al. (2024) "GraphRAG: Unlocking LLM Discovery on Narrative Private Data" [[arXiv](https://arxiv.org/abs/2404.16130)]** �� ΢���֪ʶͼ�װ� RAG�����������"���ʵ��֮��Ĺ�ϵ����"�����⣬���Կ���ƪ��
-- **Modarressi et al. (2023) "MemPrompt: An Interactive Memory Model for Large Language Models"** �� �ü����Ϊ Prompt ��һ���֣�������ϵͳ�����������"���������䷽��"����Ȥ���Է�����
 
 > ��չ���Ĳ��Ƴ������� `04-Agent������֪ʶ/��չ/` �ļ����¡�
 
