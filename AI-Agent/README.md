@@ -1,4 +1,4 @@
-﻿# 🤖 AI Agent 系统性学习路径
+# 🤖 AI Agent 系统性学习路径
 
 > 让 LLM 不只是"聊天"，而是能感知、规划、调用工具、协作行动——从被动问答到主动执行。输入是用户目标/环境状态，输出是工具调用序列/行动计划/最终答案。
 
@@ -172,15 +172,13 @@ Agent 的输入不仅仅是用户的一句话，还包括环境状态（文件�
 
 | 模块 | 核心篇数 | 拓展篇数 | 核心论文 |
 |------|---------|---------|---------|
-| 01-Agent 基础范式 | 4 | 2 | Yao (2023) ReAct [[arXiv](https://arxiv.org/abs/2210.03629)], Schick (2023) Toolformer [[arXiv](https://arxiv.org/abs/2302.04761)], Patil (2023) Gorilla [[arXiv](https://arxiv.org/abs/2305.15334)],  OpenAI (2023) Function Calling |
-| 02-推理与规划 | 4 | 2 | Wang (2022) CoT-SC [[arXiv](https://arxiv.org/abs/2203.11171)], Yao (2023) ToT [[arXiv](https://arxiv.org/abs/2305.10601)], Shinn (2023) Reflexion [[arXiv](https://arxiv.org/abs/2303.11366)], Wang (2023) Plan-and-Solve [[arXiv](https://arxiv.org/abs/2305.04091)] |
-| 03-多智能体系统 | 3 | 2 | Park (2023) Generative Agents [[arXiv](https://arxiv.org/abs/2304.03442)], Wu (2023) AutoGen [[arXiv](https://arxiv.org/abs/2308.08155)], Hong (2023) MetaGPT [[arXiv](https://arxiv.org/abs/2308.00352)] |
+| 01-Agent 基础范式 | 3 | 1 | Yao (2023) ReAct [[arXiv](https://arxiv.org/abs/2210.03629)], Schick (2023) Toolformer [[arXiv](https://arxiv.org/abs/2302.04761)], Patil (2023) Gorilla [[arXiv](https://arxiv.org/abs/2305.15334)] |
+| 02-推理与规划 | 4 | 2 | Wang (2022) CoT [[arXiv](https://arxiv.org/abs/2201.11903)], Wang (2022) CoT-SC [[arXiv](https://arxiv.org/abs/2203.11171)], Yao (2023) ToT [[arXiv](https://arxiv.org/abs/2305.10601)], Shinn (2023) Reflexion [[arXiv](https://arxiv.org/abs/2303.11366)] |
+| 03-多智能体系统 | 3 | 4 | Park (2023) Generative Agents [[arXiv](https://arxiv.org/abs/2304.03442)], Wu (2023) AutoGen [[arXiv](https://arxiv.org/abs/2308.08155)], Hong (2023) MetaGPT [[arXiv](https://arxiv.org/abs/2308.00352)] |
 | 04-Agent 记忆与知识 | 3 | 2 | Lewis (2020) RAG [[arXiv](https://arxiv.org/abs/2005.11401)], Packer (2023) MemGPT [[arXiv](https://arxiv.org/abs/2310.08560)], Madaan (2023) Self-Refine [[arXiv](https://arxiv.org/abs/2303.17651)] |
-| 05-工程框架与协议 | 4 | 2 | Xi (2023) Agent Survey [[arXiv](https://arxiv.org/abs/2306.06094)], Qin (2023) ToolLLM [[arXiv](https://arxiv.org/abs/2307.16789)], Liu (2023) AgentBench [[arXiv](https://arxiv.org/abs/2308.03688)], Anthropic (2024) MCP [[Anthropic](https://www.anthropic.com/news/model-context-protocol)] |
-| 05-工程框架与协议 (2025-) | — | — | MCP [[Anthropic](https://www.anthropic.com/news/model-context-protocol)] 广泛采用, Agents SDK, Agent-to-Agent, Cline/Codex CLI |
-| 06-安全评估与前沿挑战 | 3 | 2 | Zhou (2023) WebArena [[arXiv](https://arxiv.org/abs/2307.13854)], 安全综述方向, Coding Agent 方向 |
-| 06-安全评估与前沿挑战 (2025-) | — | — | Computer Use [Anthropic], Deep Research [OpenAI] |
-| **合计** | **25** | **12** | **扩展到 2025-2026 关键进展** |
+| 05-工程框架与协议 | 3 | 1 | Xi (2023) Agent Survey [[arXiv](https://arxiv.org/abs/2309.07864)], Qin (2023) ToolLLM [[arXiv](https://arxiv.org/abs/2307.16789)], Liu (2023) AgentBench [[arXiv](https://arxiv.org/abs/2308.03688)] |
+| 06-安全评估与前沿挑战 | 3 | 4 | Zhou (2023) WebArena [[arXiv](https://arxiv.org/abs/2307.13854)], LLM Safety Survey (2024) [[arXiv](https://arxiv.org/abs/2412.17686)], GUI Agents Survey (2024) [[arXiv](https://arxiv.org/abs/2412.13501)] |
+| **合计** | **19** | **14** | **共计 33 篇论文，筛选标准：每模块 3-4 篇覆盖范式节点** |
 
 > 筛选原则：每模块只保留**节点性论文**（提出新范式的第一篇 / 验证可行性的第一篇 / 事实标准的奠基篇）。拓展论文不移除，放在各模块的 `拓展/` 文件夹下。
 
