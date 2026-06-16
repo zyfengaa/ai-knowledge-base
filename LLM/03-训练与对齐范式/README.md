@@ -1,4 +1,4 @@
-﻿﻿﻿# 03 — 训练与对齐范式
+﻿﻿﻿﻿# 03 — 训练与对齐范式
 
 > 怎么让一个「背了 100TB 互联网文本」的模型学会「好好说话」而不是「复读数据」？
 
@@ -55,13 +55,13 @@
 
 ## 精选论文
 
-**Brown et al. (2020) "Language Models are Few-Shot Learners" (GPT-3)**
+**Brown et al. (2020) "Language Models are Few-Shot Learners" (GPT-3) [[arXiv](https://arxiv.org/abs/2005.14165)]**
 
 - **一句话定位**：175B 参数展示 Scaling Law + In-Context Learning，LLM 时代真正的开端
 - **阅读重点**：第 3 节（Scaling Law 的实验验证——Figure 3.1 的幂律曲线是核心）和第 4 节（In-Context Learning 的涌现现象）
 - **时间分配建议**：时间紧只读第 3 节了解 Scaling Law + 看 Table 3.2 的模型规格表；时间充裕精读第 4-5 节了解 Few-shot / Zero-shot 表现
 
-**Ouyang et al. (2022) "Training Language Models to Follow Instructions with Human Feedback" (InstructGPT)**
+**Ouyang et al. (2022) "Training Language Models to Follow Instructions with Human Feedback" (InstructGPT) [[arXiv](https://arxiv.org/abs/2203.02155)]**
 
 - **一句话定位**：RLHF 范式的确立论文，ChatGPT 的技术基础
 - **阅读重点**：第 2 节（RLHF 三阶段方法——Figure 2 是整个管线的流程图）和第 3.1-3.3 节（PPO 优化细节）
