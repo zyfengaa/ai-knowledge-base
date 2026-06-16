@@ -1,4 +1,4 @@
-﻿# 🗣️ 语音合成（Text-to-Speech）系统性学习体系
+﻿﻿﻿# 🗣️ 语音合成（Text-to-Speech）系统性学习体系
 
 > 将文字转化为自然流利的语音——输入是文本序列，输出是对应的语音波形序列。核心挑战在于：**文本是离散的、稀疏的符号系统，语音是连续的、高维的声学信号**，两者之间的映射充满了歧义（同文异音、异文同音、韵律无标注）。
 
@@ -87,8 +87,8 @@ flowchart LR
 
 文本到语音的起点是对输入文本的理解。这涉及文本规范化（数字/日期/缩写的歧义消除）、音素转换（G2P）、韵律预测（边界/重音）。**这一层是 TTS 中最容易被低估但实际最影响自然度的部分。**
 
-- **Tan et al. (2021) "A Survey on Neural Speech Synthesis"**：最全面的 TTS 综述，覆盖经典→神经TTS演进，是系统学习 TTS 的最佳入口
-- **Taylor (2009) "Text-to-Speech Synthesis"**（教材）：统计参数合成的经典参考书，文本前端章节仍是标准参考文献
+- **Tan et al. (2021) "A Survey on Neural Speech Synthesis" [[arXiv](https://arxiv.org/abs/2106.15561)]**：最全面的 TTS 综述，覆盖经典→神经TTS演进，是系统学习 TTS 的最佳入口
+- **Taylor (2009) "Text-to-Speech Synthesis" [Cambridge University Press](https://www.cambridge.org/9780521899275)**（教材）：统计参数合成的经典参考书，文本前端章节仍是标准参考文献
 
 ### 2. 核心范式层：三大流派
 

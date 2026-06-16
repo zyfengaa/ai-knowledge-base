@@ -1,4 +1,4 @@
-# 🎮 强化学习 (Reinforcement Learning) 系统性学习路径
+﻿# 🎮 强化学习 (Reinforcement Learning) 系统性学习路径
 
 > 智能体（Agent）通过在动态环境中执行动作、接收奖励反馈，学习最优决策策略——即"从试错中学会最大化累积回报"。
 
@@ -168,7 +168,7 @@ RL 的输入是**状态**（state）和**奖励**（reward）。早期用低维�
 
 | 模块 | 核心篇数 | 拓展篇数 | 核心论文 |
 |------|---------|---------|---------|
-| 01-基础理论 | 2 | 1 | Watkins(1992), Kaelbling(1996) |
+| 01-基础理论 | 2 | 1 | Watkins(1992) [DOI](https://link.springer.com/article/10.1007/BF00992698), Kaelbling(1996) [JAIR](https://www.jair.org/index.php/jair/article/view/10166) |
 | 02-深度Q网络 | 3 | 1 | DQN(2015) [[arXiv](https://arxiv.org/abs/1312.5602)], Double DQN(2016) [[arXiv](https://arxiv.org/abs/1509.06461)], Rainbow(2018) [[arXiv](https://arxiv.org/abs/1710.02298)] |
 | 03-策略梯度与信任域 | 4 | 2 | REINFORCE(1992), TRPO(2015) [[arXiv](https://arxiv.org/abs/1502.05477)], A3C(2016) [[arXiv](https://arxiv.org/abs/1602.01783)], PPO(2017) [[arXiv](https://arxiv.org/abs/1707.06347)] |
 | 04-连续控制与最大熵 | 3 | 1 | DDPG(2016) [[arXiv](https://arxiv.org/abs/1509.02971)], TD3(2018) [[arXiv](https://arxiv.org/abs/1802.09477)], SAC(2018) [[arXiv](https://arxiv.org/abs/1801.01290)] |
