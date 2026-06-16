@@ -169,11 +169,11 @@ RL 的输入是**状态**（state）和**奖励**（reward）。早期用低维�
 | 模块 | 核心篇数 | 拓展篇数 | 核心论文 |
 |------|---------|---------|---------|
 | 01-基础理论 | 2 | 1 | Watkins(1992), Kaelbling(1996) |
-| 02-深度Q网络 | 3 | 1 | DQN(2015), Double DQN(2016), Rainbow(2018) |
-| 03-策略梯度与信任域 | 4 | 2 | REINFORCE(1992), TRPO(2015), A3C(2016), PPO(2017) |
-| 04-连续控制与最大熵 | 3 | 1 | DDPG(2016), TD3(2018), SAC(2018) |
-| 05-RL×LLM | 4 | 2 | Christiano(2017), InstructGPT(2022), DPO(2023), GRPO(2024) |
-| 05-RL×LLM (2025-) | 3 | — | o1/o3 [OpenAI], DAPO [arXiv], Reinforce++ |
+| 02-深度Q网络 | 3 | 1 | DQN(2015) [[arXiv](https://arxiv.org/abs/1312.5602)], Double DQN(2016) [[arXiv](https://arxiv.org/abs/1509.06461)], Rainbow(2018) [[arXiv](https://arxiv.org/abs/1710.02298)] |
+| 03-策略梯度与信任域 | 4 | 2 | REINFORCE(1992), TRPO(2015) [[arXiv](https://arxiv.org/abs/1502.05477)], A3C(2016) [[arXiv](https://arxiv.org/abs/1602.01783)], PPO(2017) [[arXiv](https://arxiv.org/abs/1707.06347)] |
+| 04-连续控制与最大熵 | 3 | 1 | DDPG(2016) [[arXiv](https://arxiv.org/abs/1509.02971)], TD3(2018) [[arXiv](https://arxiv.org/abs/1802.09477)], SAC(2018) [[arXiv](https://arxiv.org/abs/1801.01290)] |
+| 05-RL×LLM | 4 | 2 | Christiano(2017) [[arXiv](https://arxiv.org/abs/1706.03741)], InstructGPT(2022) [[arXiv](https://arxiv.org/abs/2203.02155)], DPO(2023) [[arXiv](https://arxiv.org/abs/2305.18290)], GRPO(2024) [[arXiv](https://arxiv.org/abs/2402.03300)] |
+| 05-RL×LLM (2025-) | 3 | — | o1/o3 [[OpenAI](https://openai.com/index/introducing-openai-o1-preview/)], DAPO [[arXiv](https://arxiv.org/abs/2503.14442)], Reinforce++ |
 | 06-离线RL与前沿挑战 | 3 | 1 | Offline RL Survey(2020), CQL(2020), Decision Transformer(2021) |
 | **合计** | **22** | **8** | **扩展到 2025-2026 关键进展** |
 

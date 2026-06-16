@@ -202,13 +202,13 @@ flowchart LR
 
 | 模块 | 核心篇数 | 核心论文 |
 |------|---------|----------|
-| 01-Transformer 起源 | 1 | Vaswani (2017) Attention Is All You Need |
-| 02-架构演进迭代 | 5 | Su (2021) RoPE, Dao (2022) FlashAttention, Ainslie (2023) GQA, Zhang (2019) RMSNorm, Shazeer (2020) SwiGLU |
-| 03-训练与对齐范式 | 3 | Brown (2020) GPT-3, Ouyang (2022) InstructGPT, Rafailov (2023) DPO |
-| 04-推理与部署优化 | 2 | Kwon (2023) PagedAttention, Frantar (2023) GPTQ |
-| 05-应用技术 | 2 | Lewis (2020) RAG, Wei (2022) CoT |
-| 06-前沿方向 | 2 | Jiang (2024) Mixtral MoE, Yao (2023) ReAct |
-| 06-前沿方向 (2025-) | 4 | DeepSeek R1 [arXiv], DeepSeek V3 [arXiv], GPT-4o [OpenAI], Claude 4 [Anthropic] |
+| 01-Transformer 起源 | 1 | Vaswani (2017) [[arXiv](https://arxiv.org/abs/1706.03762)] Attention Is All You Need |
+| 02-架构演进迭代 | 5 | Su (2021) RoPE [[arXiv](https://arxiv.org/abs/2104.09864)], Dao (2022) FlashAttention [[arXiv](https://arxiv.org/abs/2205.14135)], Ainslie (2023) GQA [[arXiv](https://arxiv.org/abs/2305.13245)], Zhang (2019) RMSNorm [[arXiv](https://arxiv.org/abs/1910.07467)], Shazeer (2020) SwiGLU [[arXiv](https://arxiv.org/abs/2002.05202)] |
+| 03-训练与对齐范式 | 3 | Brown (2020) GPT-3 [[arXiv](https://arxiv.org/abs/2005.14165)], Ouyang (2022) InstructGPT [[arXiv](https://arxiv.org/abs/2203.02155)], Rafailov (2023) DPO [[arXiv](https://arxiv.org/abs/2305.18290)] |
+| 04-推理与部署优化 | 2 | Kwon (2023) PagedAttention [[arXiv](https://arxiv.org/abs/2309.06180)], Frantar (2023) GPTQ [[arXiv](https://arxiv.org/abs/2210.17323)] |
+| 05-应用技术 | 2 | Lewis (2020) RAG [[arXiv](https://arxiv.org/abs/2005.11401)], Wei (2022) CoT [[arXiv](https://arxiv.org/abs/2201.11903)] |
+| 06-前沿方向 | 2 | Jiang (2024) Mixtral MoE [[arXiv](https://arxiv.org/abs/2401.04088)], Yao (2023) ReAct [[arXiv](https://arxiv.org/abs/2210.03629)] |
+| 06-前沿方向 (2025-) | 4 | DeepSeek R1 [[arXiv](https://arxiv.org/abs/2501.12948)], DeepSeek V3 [[arXiv](https://arxiv.org/abs/2412.19437)], GPT-4o [[OpenAI](https://openai.com/index/hello-gpt-4o/)], Claude 4 [[Anthropic](https://www.anthropic.com/news/claude-4)] |
 | **合计** | **19** | **扩展到 2025-2026 关键进展** |
 
 
