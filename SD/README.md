@@ -230,3 +230,12 @@ flowchart LR
 | Uni-ControlNet: All-in-One Control for Text-to-Image Diffusion Models | [arXiv](https://arxiv.org/abs/2305.16322) |
 | Visual Autoregressive Modeling: Generating Images at Scale | [arXiv](https://arxiv.org/abs/2404.02905) |
 | Zero-1-to-3: Zero-shot One Image to 3D Object | [arXiv](https://arxiv.org/abs/2303.11328) |
+
+
+## 2025-2026 扩展
+
+| 论文 | 链接 |
+|---|---|
+| FLUX.1 | [BFL](https://blackforestlabs.ai/announcements/) |
+| SD3 | [Stability](https://stability.ai/news/stable-diffusion-3) |
+| Sora | [OpenAI](https://openai.com/index/sora/) |

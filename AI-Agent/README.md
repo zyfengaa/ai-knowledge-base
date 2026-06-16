@@ -177,8 +177,10 @@ Agent 的输入不仅仅是用户的一句话，还包括环境状态（文件�
 | 03-多智能体系统 | 3 | 2 | Park (2023) Generative Agents, Wu (2023) AutoGen, Hong (2023) MetaGPT |
 | 04-Agent 记忆与知识 | 3 | 2 | Lewis (2020) RAG, Packer (2023) MemGPT, Madaan (2023) Self-Refine |
 | 05-工程框架与协议 | 4 | 2 | Xi (2023) Agent Survey, Qin (2023) ToolLLM, Liu (2023) AgentBench, Anthropic (2024) MCP |
+| 05-工程框架与协议 (2025-) | — | — | MCP 广泛采用, Agents SDK, Agent-to-Agent, Cline/Codex CLI |
 | 06-安全评估与前沿挑战 | 3 | 2 | Zhou (2023) WebArena, 安全综述方向, Coding Agent 方向 |
-| **合计** | **21** | **12** | **筛选标准：每模块 3-4 篇覆盖范式节点** |
+| 06-安全评估与前沿挑战 (2025-) | — | — | Computer Use [Anthropic], Deep Research [OpenAI] |
+| **合计** | **25** | **12** | **扩展到 2025-2026 关键进展** |
 
 > 筛选原则：每模块只保留**节点性论文**（提出新范式的第一篇 / 验证可行性的第一篇 / 事实标准的奠基篇）。拓展论文不移除，放在各模块的 `拓展/` 文件夹下。
 

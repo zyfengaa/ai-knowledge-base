@@ -69,7 +69,6 @@ Gemini 2.5 / Llama 4 (2025) — 百万级上下文 + Agent 原生
   └─ 扩展 · 上下文窗口从 128K 迈向 1M+，模型原生支持工具调用
 ```
 
-> 参考资源：DeepSeek R1 [[arXiv](https://arxiv.org/abs/2501.12948)] · DeepSeek V3 [[arXiv](https://arxiv.org/abs/2412.19437)] · GRPO [[arXiv](https://arxiv.org/abs/2402.03300)] · GPT-4o [[OpenAI](https://openai.com/index/hello-gpt-4o/)] · Claude 4 [[Anthropic](https://www.anthropic.com/news/claude-4)] · Gemini 2.5 [[Google](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/)] · Llama 4 [[Meta](https://ai.meta.com/blog/llama-4-multimodal-intelligence/)]
 
 ## AI-Agent · 智能体
 
@@ -112,7 +111,6 @@ Cline / Codex CLI / Cursor Agent 模式 (2025-2026)
   └─ 扩展 · Coding Agent 从 demo 变成日常开发工具
 ```
 
-> 参考资源：Deep Research [[OpenAI](https://openai.com/index/introducing-deep-research/)] · Computer Use [[Anthropic](https://www.anthropic.com/news/3-5-models-and-computer-use)] · Agents SDK [[OpenAI](https://openai.com/index/new-tools-for-building-agents/)] · Agent-to-Agent [[Google](https://github.com/google/agent-to-agent)] · MCP [[Anthropic](https://www.anthropic.com/news/model-context-protocol)] · Cline [[GitHub](https://github.com/cline/cline)] · Codex CLI [[GitHub](https://github.com/openai/codex-cli)]
 
 ## RL · 强化学习
 
@@ -160,7 +158,6 @@ GRPO 全面落地 (2025-2026)
   └─ 扩展 · 几乎所有主流开源模型采用 GRPO 或其变体进行对齐训练
 ```
 
-> 参考资源：o1 [[OpenAI](https://openai.com/index/introducing-openai-o1-preview/)] · DAPO [[arXiv](https://arxiv.org/abs/2503.14442)] · GRPO [[arXiv](https://arxiv.org/abs/2402.03300)]
 
 ## MM · 多模态
 
@@ -194,7 +191,6 @@ Sora / 可灵 / Veo (2024-2025) — 视频生成全面爆发
   └─ 扩展 · 模型不仅能看懂单张图，还能理解视频中的时序变化和事件逻辑
 ```
 
-> 参考资源：GPT-4o [[OpenAI](https://openai.com/index/hello-gpt-4o/)] · Gemini 2.0 [[Google](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/)] · Sora [[OpenAI](https://openai.com/index/sora/)]
 
 ## SD · 扩散模型
 
@@ -235,7 +231,6 @@ Sora 类视频生成全面爆发 (2024-2025)
   └─ 扩展 · 一步生成（一致性模型）+ 实时编辑成为新方向
 ```
 
-> 参考资源：FLUX.1 [[BFL](https://blackforestlabs.ai/announcements/)] · SD3 [[Stability](https://stability.ai/news/stable-diffusion-3)] · Sora [[OpenAI](https://openai.com/index/sora/)] · Hunyuan3D [[arXiv](https://arxiv.org/abs/2411.02293)]
 
 ## Audio · 语音
 
@@ -289,7 +284,6 @@ GPT-4o 语音模式 (2024-2025) — 语音对话的 ChatGPT 时刻
   └─ 扩展 · 语音不再是独立任务，而是多模态交互的默认接口
 ```
 
-> 参考资源：SenseVoice [[arXiv](https://arxiv.org/abs/2410.04487)] · GPT-4o 语音 [[OpenAI](https://openai.com/index/gpt-4o/)] · Gemini Live [[Google](https://blog.google/products/gemini/gemini-live/)]
 
 ---
 

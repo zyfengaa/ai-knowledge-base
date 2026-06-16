@@ -225,3 +225,13 @@ flowchart LR
 | 论文 | 链接 |
 |---|---|
 | ImageBind: One Embedding Space To Bind Them All | [arXiv](https://arxiv.org/abs/2305.05665) |
+
+
+## 2025-2026 扩展
+
+| 论文 | 链接 |
+|---|---|
+| GPT-4o 原生多模态 | OpenAI |
+| Gemini 2.0 原生多模态 | Google |
+| Sora 视频生成 | OpenAI |
+| 可灵 / Veo 视频生成 | — |

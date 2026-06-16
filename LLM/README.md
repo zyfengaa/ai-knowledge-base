@@ -208,7 +208,8 @@ flowchart LR
 | 04-推理与部署优化 | 2 | Kwon (2023) PagedAttention, Frantar (2023) GPTQ |
 | 05-应用技术 | 2 | Lewis (2020) RAG, Wei (2022) CoT |
 | 06-前沿方向 | 2 | Jiang (2024) Mixtral MoE, Yao (2023) ReAct |
-| **合计** | **15** | **筛选标准：每模块 2-5 篇，覆盖核心节点** |
+| 06-前沿方向 (2025-) | 4 | DeepSeek R1 [arXiv], DeepSeek V3 [arXiv], GPT-4o [OpenAI], Claude 4 [Anthropic] |
+| **合计** | **19** | **扩展到 2025-2026 关键进展** |
 
 
 
