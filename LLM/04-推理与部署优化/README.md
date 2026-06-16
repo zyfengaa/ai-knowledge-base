@@ -1,4 +1,4 @@
-﻿# 04 — 推理与部署优化
+﻿﻿﻿# 04 — 推理与部署优化
 
 > 一个 70B 参数的模型占用 140GB 显存——你怎么在单张 A100（80GB）上让它跑起来？
 
@@ -63,13 +63,13 @@ Memory Management（内存管理）— PagedAttention
 
 ## 精选论文
 
-**Kwon et al. (2023) "Efficient Memory Management for Large Language Model Serving with PagedAttention"**
+**Kwon et al. (2023) "Efficient Memory Management for Large Language Model Serving with PagedAttention" [[arXiv](https://arxiv.org/abs/2309.06180)]**
 
 - **一句话定位**：vLLM 的核心论文，PagedAttention 类虚拟内存管理，LLM 推理的事实标准
 - **阅读重点**：第 3 节（PagedAttention 的分块机制 + Figure 2 的调度对比）和第 5 节（实验——吞吐提升 2-4x）
 - **时间分配建议**：时间紧只读第 3 节理解「怎么分块管理 KV Cache」+ 看 Figure 2 的对比图；时间充裕精读第 4 节（与操作系统的类比）
 
-**Frantar et al. (2023) "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers"**
+**Frantar et al. (2023) "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers" [[arXiv](https://arxiv.org/abs/2210.17323)]**
 
 - **一句话定位**：权重量化的主流方法，4-bit 量化几乎不损失质量
 - **阅读重点**：第 3 节（OBC → GPTQ 的扩展——逐层量化 + Hessian 矩阵做误差补偿）

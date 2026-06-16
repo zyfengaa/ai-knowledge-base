@@ -1,4 +1,4 @@
-﻿# 01 — Transformer 起源
+﻿﻿# 01 — Transformer 起源
 
 > 你拿到一段文本，怎么让模型「同时看到所有词的位置关系」？这就是 Self-Attention 要解决的根本问题。
 
@@ -49,7 +49,7 @@ Attention(Q, K, V) = softmax(Q × K^T / √d_k) × V
 
 ## 精选论文
 
-**Vaswani et al. (2017) "Attention Is All You Need"**
+**Vaswani et al. (2017) "Attention Is All You Need" [[arXiv](https://arxiv.org/abs/1706.03762)]**
 
 - **一句话定位**：Transformer 架构的诞生论文，彻底取代 RNN/CNN 成为序列建模标准，被引 100,000+
 - **阅读重点**：第 3 节（Scaled Dot-Product Attention + Multi-Head Attention 的公式推导）和第 5.4 节（位置编码的具体生成方式）。Encoder-Decoder 结构图（Figure 1）值得反复看

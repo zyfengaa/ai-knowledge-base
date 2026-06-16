@@ -1,4 +1,4 @@
-﻿# 06 — 前沿方向
+﻿﻿﻿# 06 — 前沿方向
 
 > LLM 的下一步：是让它更大（MoE）、更主动（Agent）、还是感知更丰富（MLLM）？
 
@@ -79,13 +79,13 @@ MoE vs Dense 模型：
 
 ## 精选论文
 
-**Jiang et al. (2024) "Mixtral of Experts"**
+**Jiang et al. (2024) "Mixtral of Experts" [[arXiv](https://arxiv.org/abs/2401.04088)]**
 
 - **一句话定位**：MoE 在 LLM 中的成功实践，8×7B 只有 12.9B 激活参数但超越 LLaMA 2 70B
 - **阅读重点**：第 2 节（MoE 层结构和 Router 设计——Figure 1 的架构图）和第 3 节（实验对比）
 - **时间分配建议**：实验细节可以跳读，核心是理解「总参数 vs 激活参数的 trade-off」以及 Mixtral 为什么选择 Top-2 路由
 
-**Yao et al. (2023) "ReAct: Synergizing Reasoning and Acting in Language Models"**
+**Yao et al. (2023) "ReAct: Synergizing Reasoning and Acting in Language Models" [[arXiv](https://arxiv.org/abs/2210.03629)]**
 
 - **一句话定位**：Agent 范式的起点，推理 + 工具调用的组合，后续 ChatGPT Plugins / MCP 的基础
 - **阅读重点**：第 2 节（ReAct 的定义 + Figure 1 的对比实验——ReAct vs CoT vs Standard 在 HotpotQA 上的差异非常直观）

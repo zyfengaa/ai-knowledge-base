@@ -1,4 +1,4 @@
-﻿# 03 — 训练与对齐范式
+﻿﻿﻿# 03 — 训练与对齐范式
 
 > 怎么让一个「背了 100TB 互联网文本」的模型学会「好好说话」而不是「复读数据」？
 
@@ -67,7 +67,7 @@
 - **阅读重点**：第 2 节（RLHF 三阶段方法——Figure 2 是整个管线的流程图）和第 3.1-3.3 节（PPO 优化细节）
 - **时间分配建议**：PPO 的训练细节（Section 3.4+）可以跳读，理解「三个阶段分别做什么」比理解「PPO 的 KL 散度惩罚」更重要
 
-**Rafailov et al. (2023) "Direct Preference Optimization" (DPO)**
+**Rafailov et al. (2023) "Direct Preference Optimization" (DPO) [[arXiv](https://arxiv.org/abs/2305.18290)]**
 
 - **一句话定位**：去掉 Reward Model，直接优化偏好，对齐方法的更优选
 - **阅读重点**：第 2 节（DPO 的公式推导——为什么可以跳过 RM）和第 4 节（实验对比）

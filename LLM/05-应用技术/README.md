@@ -1,4 +1,4 @@
-﻿# 05 — 应用技术
+﻿﻿﻿# 05 — 应用技术
 
 > 模型的知识停在训练时——怎么让它回答「今天天气怎么样」或者解一道从未见过的数学题？
 
@@ -60,13 +60,13 @@ User Query → Embedding → Vector DB 检索（Top-K）→ 检索结果 + Query
 
 ## 精选论文
 
-**Lewis et al. (2020) "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"**
+**Lewis et al. (2020) "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" [[arXiv](https://arxiv.org/abs/2005.11401)]**
 
 - **一句话定位**：RAG 的提出论文，检索 + 生成的融合范式，至今是 LLM 落地的核心架构
 - **阅读重点**：第 2 节（RAG 的两种变体——RAG-Sequence 和 RAG-Token 的区别）和第 3 节（实验验证）
 - **时间分配建议**：时间紧只读第 2 节理解 RAG 是什么（Figure 1 的架构图胜过千言万语）；时间充裕精读第 4 节（参数化记忆 vs 非参数化记忆的讨论）
 
-**Wei et al. (2022) "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"**
+**Wei et al. (2022) "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models" [[arXiv](https://arxiv.org/abs/2201.11903)]**
 
 - **一句话定位**：CoT 思维链，第一次证明 LLM 可以通过「逐步推理」显著提升复杂问题解决能力
 - **阅读重点**：第 2 节（CoT 的定义和示例——Table 1 的标准 Few-shot vs CoT Few-shot 对比非常直观）和第 3 节（实验——CoT 在 GSM8K 和 MAWPS 上的巨大提升）

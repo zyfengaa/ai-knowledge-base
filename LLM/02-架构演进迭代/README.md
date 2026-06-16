@@ -1,4 +1,4 @@
-﻿# 02 — 架构演进迭代
+﻿﻿﻿﻿﻿﻿# 02 — 架构演进迭代
 
 > 原始 Transformer 的每个组件都「能用但不够好」——6 年时间，5 个关键改进各自解决一个独立问题。
 
@@ -61,31 +61,31 @@
 
 ## 精选论文
 
-**Su et al. (2021) "RoFormer: Rotary Position Embedding"**
+**Su et al. (2021) "RoFormer: Rotary Position Embedding" [[arXiv](https://arxiv.org/abs/2104.09864)]**
 
 - **一句话定位**：RoPE 是目前最主流的位置编码，LLaMA/Qwen/DeepSeek 全系列在用
 - **阅读重点**：第 3 节——RoPE 的旋转矩阵推导和相对位置编码性质证明。核心 insight 是：用旋转矩阵替代加法来做位置编码
 - **时间分配建议**：公式推导可跳读（理解思想即可），重点看 Figure 2 的位置编码可视化对比
 
-**Dao et al. (2022) "FlashAttention: Fast and Memory-Efficient Exact Attention"**
+**Dao et al. (2022) "FlashAttention: Fast and Memory-Efficient Exact Attention" [[arXiv](https://arxiv.org/abs/2205.14135)]**
 
 - **一句话定位**：IO 感知注意力算法，所有现代训练/推理框架标配
 - **阅读重点**：第 2 节（IO 复杂度分析 + tiling 策略 + 重计算思想），比具体算法实现更重要
 - **时间分配建议**：Section 3 的块级实现细节（Algorithm 1）可跳读，理解「为什么 IO 是瓶颈」比理解具体分块方案更重要
 
-**Ainslie et al. (2023) "GQA: Training Generalized Multi-Query Transformer Models"**
+**Ainslie et al. (2023) "GQA: Training Generalized Multi-Query Transformer Models" [[arXiv](https://arxiv.org/abs/2305.13245)]**
 
 - **一句话定位**：MHA → MQA → GQA 的演化路径，LLaMA 2/3 采用的注意力头设计
 - **阅读重点**：第 2 节（三种设计的对比）和实验结果——GQA 在质量上与 MHA 相当，速度与 MQA 相当
 - **时间分配建议**：如果对 LLaMA 架构熟悉可以直接看 Table 1 的对比总结
 
-**Zhang & Sennrich (2019) "Root Mean Square Layer Normalization"**
+**Zhang & Sennrich (2019) "Root Mean Square Layer Normalization" [[arXiv](https://arxiv.org/abs/1910.07467)]**
 
 - **一句话定位**：RMSNorm，去掉 mean centering 的简化 LayerNorm，LLaMA 系列的标准归一化
 - **阅读重点**：核心思想很简单——只做除以标准差，不做减均值。看第 2 节公式即可
 - **时间分配建议**：全文很短（~4 页），建议通读。实验部分可以跳读
 
-**Shazeer (2020) "GLU Variants Improve Transformer"**
+**Shazeer (2020) "GLU Variants Improve Transformer" [[arXiv](https://arxiv.org/abs/2002.05202)]**
 
 - **一句话定位**：SwiGLU 激活函数，LLaMA/Qwen/DeepSeek/PaLM 的标准选择
 - **阅读重点**：第 2 节（GLU 变体的形式化定义）和第 3 节（实验对比）
