@@ -56,13 +56,13 @@ MoE + Agent + MLLM (2024-)
   └─ Mixtral 用稀疏激活突破参数限制，ReAct Agent 打开 LLM+工具维度
   └─ MoE 路由不均衡，Agent 可靠性无保证，多模态融合深度不够
       ↓
-DeepSeek R1 (2025) — 开源推理模型
+DeepSeek R1 (2025) — 开源推理模型 [[arXiv](https://arxiv.org/abs/2501.12948)]
   └─ 核心 ★ GRPO 大规模 RL 训练首次产出可媲美闭源的推理模型
       ↓
 GPT-4o / Claude 4 (2025) — 原生多模态 LLM 成熟
   └─ 核心 ★ 语音/图像/文本统一处理，多模态不再是"外挂"
       ↓
-DeepSeek V3 (2025) — 高效 MoE 训练里程碑
+DeepSeek V3 (2025) — 高效 MoE 训练里程碑 [[arXiv](https://arxiv.org/abs/2412.19437)]
   └─ 核心 ★ 大幅降低 MoE 训练成本，验证"更少算力、更好数据"路线
       ↓
 Gemini 2.5 / Llama 4 (2025) — 百万级上下文 + Agent 原生
@@ -145,7 +145,7 @@ DPO (2023) — 不用 reward model，直接在偏好上优化
 RLOO (2023) — 用 Leave-One-Out 替代 critic
   └─ 证明了"可以没有 critic"
       ↓
-GRPO (2024) — 系统化组归一化，开箱即用
+GRPO (2024) — 系统化组归一化，开箱即用 [[arXiv](https://arxiv.org/abs/2402.03300)]
   └─ 去掉了 critic 和 reward model，成为最广泛使用的 RL 训练方案
       ↓
 Reinforce++ / DAPO (2025) — GRPO 的工程增强版
@@ -253,7 +253,7 @@ Conformer (2020) — CNN + Transformer 混合编码器
       ↓
 大规模预训练：wav2vec 2.0 → HuBERT → Whisper (2020-2022)
   └─ 自监督 + 弱监督，零样本泛化远超传统方案
-流式多语言模型成熟 (2024-2025)
+流式多语言模型成熟 (2024-2025) [[arXiv](https://arxiv.org/abs/2410.04487)]
   └─ 扩展 · Whisper 之后的流式方案（SenseVoice / Qwen-Audio）在延迟和准确率上显著提升
 
 GPT-4o 语音模式 / Gemini Live (2024-2025)
@@ -290,8 +290,8 @@ GPT-4o 语音模式 (2024-2025) — 语音对话的 ChatGPT 时刻
 |------|:----:|
 | 系统性笔记（.md） | 57 篇 |
 | 可运行代码（.py） | 11 个 |
-| 核心论文精读 | 57 篇 |
-| 扩展论文引用 | 166 篇 |
+| 核心论文精读 | 60+ 篇 |
+| 扩展论文引用 | 170+ 篇 |
 
 ---
 
