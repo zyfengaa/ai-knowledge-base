@@ -1,4 +1,4 @@
-﻿﻿# 06 — 开放问题：从 ASR 到语音理解
+﻿﻿﻿# 06 — 开放问题：从 ASR 到语音理解
 
 ## 2023 年之前的问题
 
@@ -71,7 +71,7 @@ Streaming RNNT（He 2019）——这篇论文最重要的结论不是"RNNT 能�
 
 Meta 这篇的工作量非常大：多语言语音到语音/文本翻译 + ASR 全部统一。你不必读完整篇（它太长了），重点是理解它的架构设计——同一个 Encoder-Decoder 怎么同时支持语音输入输出和文本输入输出。
 
-**Brown et al. (2023) "Between Speech and Text: A Tutorial and Survey on Multimodal ASR and Understanding"**
+**Brown et al. (2023) "Between Speech and Text: A Tutorial and Survey on Multimodal ASR and Understanding" [ICASSP Tutorial](https://sites.google.com/view/between-speech-and-text)**
 
 ASR + LLM 交叉方向最全面的综述。想了解这个领域从 2022-2023 年的全景的话，这篇是最好的起点。2024-2025 年后续发展了很多新方向，但这篇打的基础框架你现在仍然在用。
 

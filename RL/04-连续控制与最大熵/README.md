@@ -1,4 +1,4 @@
-﻿﻿# 04 — 连续控制与最大熵：从 DDPG 到 SAC
+﻿﻿﻿# 04 — 连续控制与最大熵：从 DDPG 到 SAC
 
 ## 一句话开场
 
@@ -69,7 +69,7 @@
 
 ## 拓展阅读
 
-- **Silver et al. (2014) "Deterministic Policy Gradient Algorithms"** — DPG 的原始论文，从理论层面证明了确定性策略梯度定理，是 DDPG 的理论基础。如果你对"为什么 Actor 可以输出确定性动作还能做策略梯度"感兴趣可以翻翻。
+- **Silver et al. (2014) "Deterministic Policy Gradient Algorithms" [PMLR](https://proceedings.mlr.press/v32/silver14.html)** — DPG 的原始论文，从理论层面证明了确定性策略梯度定理，是 DDPG 的理论基础。如果你对"为什么 Actor 可以输出确定性动作还能做策略梯度"感兴趣可以翻翻。
 
 
 > 拓展论文不移除，放在各模块的 `拓展/` 文件夹下。核心论文在模块根目录。

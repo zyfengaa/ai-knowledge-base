@@ -1,4 +1,4 @@
-﻿﻿﻿﻿# 03 — 三种端到端范式
+﻿﻿﻿﻿﻿# 03 — 三种端到端范式
 
 ## 为什么一个问题，会有三种答案？
 
@@ -59,7 +59,7 @@ RNNT 的核心想法是：用一个小型的 Prediction Network 来建模"我已
 
 ## 精选论文
 
-**Graves et al. (2006) "Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks"**
+**Graves et al. (2006) "Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks" [ACM](https://dl.acm.org/doi/10.1145/1143844.1143891)**
 
 这篇是端到端 ASR 的理论起点。读它的重点不是技术实现细节（Blank 和前向后向的推导），而是理解它"为什么不需要对齐"这个核心 insight。如果你时间紧，读摘要 + 引言 + 结论就可掌握精神。
 

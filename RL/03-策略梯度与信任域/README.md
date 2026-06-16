@@ -1,4 +1,4 @@
-﻿﻿# 03 — 策略梯度与信任域：从 REINFORCE 到 PPO
+﻿﻿﻿﻿# 03 — 策略梯度与信任域：从 REINFORCE 到 PPO
 
 ## 一句话开场
 
@@ -41,7 +41,7 @@
 
 ## 精选论文
 
-**Williams (1992) "Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning"**
+**Williams (1992) "Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning" [DOI](https://link.springer.com/article/10.1007/BF00992696)**
 
 - **一句话定位**：REINFORCE 的原始论文，策略梯度方法的理论起点
 - **阅读重点**：第 2-3 节——梯度推导 + 基线（baseline）的引入
@@ -73,7 +73,7 @@
 
 ## 拓展阅读
 
-- **Greensmith et al. (2004) "Variance Reduction Techniques for Gradient Estimates in Reinforcement Learning"** — 策略梯度方差缩减的理论分析。如果你想深入理解为什么需要 baseline 以及如何做方差缩减，可以翻翻。
+- **Greensmith et al. (2004) "Variance Reduction Techniques for Gradient Estimates in Reinforcement Learning" [[ICML](https://icml.cc/Conferences/2004/proceedings.html)] ** — 策略梯度方差缩减的理论分析。如果你想深入理解为什么需要 baseline 以及如何做方差缩减，可以翻翻。
 
 
 > 拓展论文不移除，放在各模块的 `拓展/` 文件夹下。核心论文在模块根目录。

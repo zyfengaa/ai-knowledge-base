@@ -1,4 +1,4 @@
-﻿# 01 — 基础理论：MDP、Bellman 方程与动态规划
+﻿﻿﻿# 01 — 基础理论：MDP、Bellman 方程与动态规划
 
 ## 一句话开场
 
@@ -44,14 +44,14 @@
 
 ## 精选论文
 
-**Watkins & Dayan (1992) "Q-Learning"**
+**Watkins & Dayan (1992) "Q-Learning" [DOI](https://link.springer.com/article/10.1007/BF00992698) [DOI](https://link.springer.com/article/10.1007/BF00992698)**
 
 - **一句话定位**：Q-Learning 的原始论文，off-policy TD 控制的奠基之作
 - **阅读重点**：第 2-3 节——Q 值更新公式的收敛性证明思路
 - **时间分配建议**：时间紧读第 1-2 节的公式定义即可（约 10 分钟）；时间充裕再读收敛性证明
 - **与本模块的关系**：回答了"如何不依赖环境模型，通过迭代更新学到最优 Q 函数"
 
-**Kaelbling, Littman & Moore (1996) "Reinforcement Learning: A Survey"**
+**Kaelbling, Littman & Moore (1996) "Reinforcement Learning: A Survey" [JAIR](https://www.jair.org/index.php/jair/article/view/10166) [JAIR](https://www.jair.org/index.php/jair/article/view/10166)**
 
 - **一句话定位**：RL 领域第一篇系统性综述，涵盖了到 1996 年的所有核心思想
 - **阅读重点**：第 3-4 节——MDP 定义 + TD 方法分类
@@ -62,7 +62,7 @@
 
 ## 拓展阅读
 
-- **Sutton & Barto (2018) "Reinforcement Learning: An Introduction"** — 强化学习标准教材，第 3-4 章覆盖 MDP/Bellman/DP，第 6 章覆盖 TD 学习。如果你有充足时间建议精读第 3-6 章。
+- **Sutton & Barto (2018) "Reinforcement Learning: An Introduction" [MIT Press](https://mitpress.mit.edu/9780262039246/) [MIT Press](https://mitpress.mit.edu/9780262039246/)** — 强化学习标准教材，第 3-4 章覆盖 MDP/Bellman/DP，第 6 章覆盖 TD 学习。如果你有充足时间建议精读第 3-6 章。
 
 > 拓展论文不移除，放在各模块的 `拓展/` 文件夹下。
 
