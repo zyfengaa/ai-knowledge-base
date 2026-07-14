@@ -6,14 +6,14 @@
 
 ## 技术演进全景
 
-`mermaid
+``` mermaid
 flowchart LR
     A["GMM-HMM<br/>~1980s-2010"] --> B["DNN-HMM<br/>~2012-2014"]
     B --> C["端到端革命<br/>CTC/AED/RNNT<br/>~2017"]
     C --> D["自监督+弱监督<br/>wav2vec/Whisper<br/>~2020-2022"]
     D --> E["语音理解融合<br/>ASR + LLM<br/>~2023-2024"]
     E --> F["音频原生LLM<br/>GPT-4o<br/>~2024-"]
-`
+```
 
 > 这张图聚焦 ASR（语音识别）的主线演进。TTS 侧有独立的演进路径，参见 TTS/ 模块。
 
@@ -79,12 +79,12 @@ flowchart LR
 
 ## 建议学习顺序
 
-`mermaid
+```mermaid
 flowchart LR
     A["ASR 03-端到端<br/>（最易入手）"] --> B["ASR 04-编码器"]
     B --> C["ASR 05-学习范式"]
     C --> D["ASR 06-前沿"]
     C --> E["TTS 模块<br/>（按需选择）"]
-`
+```
 
 > 建议先从 ASR 入手（和 CV/NLP 距离近），再根据兴趣扩展到 TTS。各模块的详细 README 中有完整的技术演进 + 论文列表 + 学习路径。
